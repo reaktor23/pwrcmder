@@ -1,0 +1,28 @@
+space: Reaktor23
+logo: https://reaktor23.org/img/logo.png
+url: https://reaktor23.org
+location:
+  address: Badstrasse 29a, 79761 Waldshut-Tiengen, Germany
+contact:
+  email: info@reaktor23.org
+issue_report_channels:
+  - email
+state:
+  entity_id: binary_sensor.space_open
+sensors:
+  temperature:
+    - sensor.sofa_temperature
+    - sensor.zuluft_temperature
+  people_now_present:
+    - sensor.person_count
+  ventilation:
+    - switch.relay_3
+    - switch.relay_4
+  light:
+   - binary_sensor.input_3
+   - binary_sensor.input_4
+  airquality:
+    - sensor.luftdaten_27822_p1
+    - sensor.luftdaten_27822_p2
+    - sensor.luftdaten_27823_humidity
+    - sensor.luftdaten_27823_temperature
