@@ -9,15 +9,25 @@
   names:
     28-0000062762df: Sofa
     28-000006288e90: Zuluft
+    
+- platform: time_date
+  display_options:
+    - 'time'
 
 - platform: template
   sensors:
     person_count:
       friendly_name: "Members present"
       unit_of_measurement: 'members'
-      entity_id:
-      # redacted for privacy reasons, a list of person.name entities
-        - person.<name>
+      # using sensor.time triggers an update of this sensor every minute, otherwise we would never see this updated on state change
+      entity_id: sensor.time
       value_template: >-
-        {{ states.person|selectattr('state', 'equalto', 'home')|list|length }}
+        {% set ns = namespace(count=0) %}
+        {% for person in states.person %}
+          {% if person.state == "home" %}
+            {% set ns.count = ns.count + 1 %}
+          {% endif %}
+        {% endfor %}
+        {{ ns.count }}
+
 
