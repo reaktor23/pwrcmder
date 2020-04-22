@@ -13,6 +13,12 @@ homeassistant:
   # Customization file
   customize: !include customize.yaml
 
+# Prevent log spamming
+logger:
+  default: warning
+  logs:
+    homeassistant.components.mikrotik: warning
+
 # Enables the frontend
 frontend:
 
