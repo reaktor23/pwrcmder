@@ -1,0 +1,23 @@
+- platform: systemmonitor
+  resources:
+      - type: memory_free
+      - type: ipv4_address
+      - type: processor_use
+      - type: last_boot
+
+- platform: onewire
+  names:
+    28-0000062762df: Sofa
+    28-000006288e90: Zuluft
+
+- platform: template
+  sensors:
+    person_count:
+      friendly_name: "Members present"
+      unit_of_measurement: 'members'
+      entity_id:
+      # redacted for privacy reasons, a list of person.name entities
+        - person.<name>
+      value_template: >-
+        {{ states.person|selectattr('state', 'equalto', 'home')|list|length }}
+
