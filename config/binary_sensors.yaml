@@ -1,0 +1,27 @@
+- platform: rpi_gpio
+  pull_mode: 'UP'
+  invert_logic: true
+  scan_interval: 0.1
+  ports:
+    5: "Input 1"
+    7: "Input 2"
+    11: "Input 3"
+    8: "Input 4"
+    9: "Input 5"
+    25: "Input 6"
+    10: "Input 7"
+    24: "Input 8"
+
+
+- platform: template
+  sensors:
+    space_open:
+        friendly_name: "Space open"
+        value_template: >-
+          {{ states('sensor.person_count')|float > 0 }}
+        icon_template: >
+          {% if states('sensor.person_count')|float > 0 %}
+            mdi:door-open
+          {% else %}
+            mdi:door-closed
+          {% endif %}
