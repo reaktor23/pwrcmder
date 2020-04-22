@@ -1,0 +1,76 @@
+innenlicht:
+  alias: Innenlicht
+  sequence:
+  - alias: INNENLICHT_ON
+    service: homeassistant.turn_on
+    data:
+      entity_id: switch.relay_2
+  - delay:
+      milliseconds: 200
+  - alias: INNENLICHT_ON
+    service: homeassistant.turn_off
+    data:
+      entity_id: switch.relay_2
+aussenlicht:
+  alias: Aussenlicht
+  sequence:
+  - alias: AUSSENLICHT_ON
+    service: homeassistant.turn_on
+    data:
+      entity_id: switch.relay_1
+  - delay:
+      milliseconds: 200
+  - alias: AUSSENLICHT_ON
+    service: homeassistant.turn_off
+    data:
+      entity_id: switch.relay_1
+toggle_circuit_1:
+  alias: Toggle Circuit 1
+  sequence:
+  - data_template:
+      entity_id: '{% if is_state(''binary_sensor.input_1'', ''on'') %} switch.relay_circuit_1_off
+        {% else %} switch.relay_circuit_1_on {% endif %}'
+    service: switch.turn_on
+  - delay: '1'
+  - data: {}
+    entity_id: switch.relay_circuit_1_off,switch.relay_circuit_1_on
+    service: switch.turn_off
+toggle_circuit_2:
+  alias: Toggle Circuit 2
+  sequence:
+  - data_template:
+      entity_id: '{% if is_state(''binary_sensor.input_2'', ''on'') %} switch.relay_circuit_2_off
+        {% else %} switch.relay_circuit_2_on {% endif %}'
+    service: switch.turn_on
+  - delay: '1'
+  - data: {}
+    entity_id: switch.relay_circuit_2_off,switch.relay_circuit_2_on
+    service: switch.turn_off
+ventilation_speed_1:
+  alias: Ventilation Speed 1
+  sequence:
+  - data: {}
+    entity_id: switch.relay_3
+    service: switch.turn_off
+  - delay: '1'
+  - data: {}
+    entity_id: switch.relay_4
+    service: switch.turn_on
+ventilation_speed_2:
+  alias: Ventilation Speed 2
+  sequence:
+  - data: {}
+    entity_id: switch.relay_4
+    service: switch.turn_off
+  - delay: '1'
+  - data: {}
+    entity_id: switch.relay_3
+    service: switch.turn_on
+ventilation_off:
+  alias: Ventilation Off
+  sequence:
+  - data: {}
+    entity_id:
+    - switch.relay_4
+    - switch.relay_3
+    service: switch.turn_off
