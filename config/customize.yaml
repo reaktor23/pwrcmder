@@ -1,0 +1,25 @@
+
+binary_sensor.input_1:
+  friendly_name: Steckdosen Stromkreis
+binary_sensor.input_2:
+  friendly_name: Server Stromkreis
+binary_sensor.input_3:
+  friendly_name: Innenlicht
+  location: Innen
+binary_sensor.input_4:
+  friendly_name: Aussenlicht
+  location: Aussen
+switch.relay_1:
+  friendly_name: Impuls Steckdosen Stromkreis
+switch.relay_2:
+  friendly_name: Impuls Server Stromkreis
+switch.relay_3:
+  friendly_name: Ventilation Stufe 2
+switch.relay_4:
+  friendly_name: Ventilation Stufe 1
+sensor.zuluft_temperature:
+  location: Zuluftrohr
+script.innenlicht:
+  location: Innen
+sensor.sofa_temperature:
+  location: Couch
