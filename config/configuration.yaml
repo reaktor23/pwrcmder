@@ -1,0 +1,75 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Reaktor23
+  # Location required to calculate the time the sun rises and sets
+  latitude: 47.629304
+  longitude: 8.262880
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Berlin
+  # Customization file
+  customize: !include customize.yaml
+
+# Enables the frontend
+frontend:
+
+config:
+
+api:
+
+updater:
+
+discovery:
+
+history:
+
+recorder:
+  purge_keep_days: 5
+  #db_url: sqlite:////data/home-assistant/database
+  db_url: postgresql://hass:miu4tigei2shabiuGhohzab4noow2ael9Aeh0aitha@actse/hass
+  exclude:
+    domains:
+      - automation
+      - updater
+    entities:
+      - sun.sun # Don't record sun data
+      - sensor.last_boot # Comes from 'systemmonitor' sensor platform
+      - sensor.date
+
+influxdb:
+  host: actse
+  
+person:
+
+system_health:
+
+spaceapi: !include spaceapi.yaml
+
+device_tracker:
+
+mikrotik:
+  - name: Mikrotik
+    host: 192.168.23.1
+    username: !secret mikrotik_username
+    password: !secret mikrotik_password
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+sensor: !include sensors.yaml
+binary_sensor: !include binary_sensors.yaml
+switch: !include switches.yaml
+
+matrix:
+  homeserver: https://matrix.reaktor23.org
+  username: !secret matrix_username
+  password: !secret matrix_password
+  rooms:
+    - "#reaktor23:reaktor23.org"
+
+media_player:
+  - platform: mpd
+    host: actse
