@@ -1,0 +1,113 @@
+Source:	/home/bouni/projects/PowerCommander/PowerCommander/PowerCommander.sch
+Date:	Wed 16 Jan 2019 09:35:17 AM CET
+Tool:	Eeschema 5.0.1
+Component Count:	108
+Ref	Value	Part	Footprint	Description	Vendor
+D1	1N4148W	PowerCommander-rescue:1N4148W-diode	Diodes_SMD:D_SOD-123F		
+D2	1N4148W	PowerCommander-rescue:1N4148W-diode	Diodes_SMD:D_SOD-123F		
+D3	1N4148W	PowerCommander-rescue:1N4148W-diode	Diodes_SMD:D_SOD-123F		
+D4	1N4148W	PowerCommander-rescue:1N4148W-diode	Diodes_SMD:D_SOD-123F		
+D5	1N4148W	PowerCommander-rescue:1N4148W-diode	Diodes_SMD:D_SOD-123F		
+D6	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D7	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D8	1N4148W	PowerCommander-rescue:1N4148W-diode	Diodes_SMD:D_SOD-123F		
+D9	1N4148W	PowerCommander-rescue:1N4148W-diode	Diodes_SMD:D_SOD-123F		
+D10	1N4148W	PowerCommander-rescue:1N4148W-diode	Diodes_SMD:D_SOD-123F		
+D11	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D12	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D13	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D14	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D15	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D16	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D17	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D18	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D19	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D20	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D21	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D22	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D23	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+D24	LED	PowerCommander-rescue:LED-device	LEDs:LED_0805_HandSoldering		
+J1	Raspberry_Pi_2_3	PowerCommander-rescue:Raspberry_Pi_2_3-conn	Socket_Strips:Socket_Strip_Straight_2x20_Pitch2.54mm		
+J2	Screw_Terminal_01x02	PowerCommander-rescue:Screw_Terminal_01x02-conn	Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal		
+J3	Screw_Terminal_01x08	Connector:Screw_Terminal_01x08	Connector_Phoenix_MC:PhoenixContact_MC_1,5_8-G-3.81_1x08_P3.81mm_Horizontal	Generic screw terminal, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J4	Screw_Terminal_01x08	Connector:Screw_Terminal_01x08	Connector_Phoenix_MC:PhoenixContact_MC_1,5_8-G-3.81_1x08_P3.81mm_Horizontal	Generic screw terminal, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J9	Screw_Terminal_01x10	Connector:Screw_Terminal_01x10	Connector_Phoenix_MC:PhoenixContact_MC_1,5_10-G-3.81_1x10_P3.81mm_Horizontal	Generic screw terminal, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J10	Conn_01x20	PowerCommander-rescue:Conn_01x20-conn	Pin_Headers:Pin_Header_Straight_1x20_Pitch2.54mm		
+J11	Conn_01x20	PowerCommander-rescue:Conn_01x20-conn	Pin_Headers:Pin_Header_Straight_1x20_Pitch2.54mm		
+J12	Screw_Terminal_01x02	PowerCommander-rescue:Screw_Terminal_01x02-conn	Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal		
+J13	Screw_Terminal_01x03	Connector:Screw_Terminal_01x03	Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal	Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J14	Screw_Terminal_01x03	Connector:Screw_Terminal_01x03	Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal	Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J15	Screw_Terminal_01x02	Connector:Screw_Terminal_01x02	Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal	Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J16	Screw_Terminal_01x02	Connector:Screw_Terminal_01x02	Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal	Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J17	Screw_Terminal_01x02	Connector:Screw_Terminal_01x02	Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal	Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J18	Screw_Terminal_01x02	Connector:Screw_Terminal_01x02	Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal	Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)	
+JP1	Jumper_3_Bridged12	Jumper:Jumper_3_Bridged12	Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm	Jumper, 3-pole, pins 1+2 closed/bridged	
+JP2	Jumper_3_Bridged12	Jumper:Jumper_3_Bridged12	Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm	Jumper, 3-pole, pins 1+2 closed/bridged	
+JP3	Jumper_3_Bridged12	Jumper:Jumper_3_Bridged12	Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm	Jumper, 3-pole, pins 1+2 closed/bridged	
+JP4	Jumper_3_Bridged12	Jumper:Jumper_3_Bridged12	Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm	Jumper, 3-pole, pins 1+2 closed/bridged	
+K1	FINDER-30.22	PowerCommander-rescue:FINDER-30.22-relays	bouni:Relay_SPDT_Finder_32.22		
+K2	FINDER-30.22	PowerCommander-rescue:FINDER-30.22-relays	bouni:Relay_SPDT_Finder_32.22		
+K3	FINDER-30.22	PowerCommander-rescue:FINDER-30.22-relays	bouni:Relay_SPDT_Finder_32.22		
+K4	FINDER-30.22	PowerCommander-rescue:FINDER-30.22-relays	bouni:Relay_SPDT_Finder_32.22		
+K5	FINDER-30.22	PowerCommander-rescue:FINDER-30.22-relays	Bouni:Relay_SPST_Finder_32.21-x300		
+K6	FINDER-30.22	PowerCommander-rescue:FINDER-30.22-relays	Bouni:Relay_SPST_Finder_32.21-x300		
+K7	FINDER-30.22	PowerCommander-rescue:FINDER-30.22-relays	Bouni:Relay_SPST_Finder_32.21-x300		
+K8	FINDER-30.22	PowerCommander-rescue:FINDER-30.22-relays	Bouni:Relay_SPST_Finder_32.21-x300		
+Q1	BSS138	PowerCommander-rescue:BSS138-transistors	TO_SOT_Packages_SMD:SOT-23		
+Q2	BSS138	PowerCommander-rescue:BSS138-transistors	TO_SOT_Packages_SMD:SOT-23		
+Q3	BSS138	PowerCommander-rescue:BSS138-transistors	TO_SOT_Packages_SMD:SOT-23		
+Q4	BSS138	PowerCommander-rescue:BSS138-transistors	TO_SOT_Packages_SMD:SOT-23		
+Q5	BSS138	PowerCommander-rescue:BSS138-transistors	TO_SOT_Packages_SMD:SOT-23		
+Q6	BSS138	PowerCommander-rescue:BSS138-transistors	TO_SOT_Packages_SMD:SOT-23		
+Q7	BSS138	PowerCommander-rescue:BSS138-transistors	TO_SOT_Packages_SMD:SOT-23		
+Q8	BSS138	PowerCommander-rescue:BSS138-transistors	TO_SOT_Packages_SMD:SOT-23		
+Q9	BSS138	PowerCommander-rescue:BSS138-transistors	TO_SOT_Packages_SMD:SOT-23		
+R1	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R2	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R3	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R4	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R5	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R6	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R7	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R8	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R9	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R10	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R11	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R12	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R13	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R14	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R15	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R16	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R17	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R18	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R19	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R20	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R21	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R22	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R23	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R24	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R25	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R26	10K	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R27	10K	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R28	4K7	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R29	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R30	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R31	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R32	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R33	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R34	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R35	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R36	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R37	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R38	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R39	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R40	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R41	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R42	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+R43	R	PowerCommander-rescue:R-device	Resistors_SMD:R_0805_HandSoldering		
+U1	HW-013	bouni:HW-013	Bouni:HW-013		
+U2	ILD74	Isolator:ILD74	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Dual Optocoupler, NPN Phototransistor Output, TTL compatible, DIP8/SMD8	
+U3	ILD74	Isolator:ILD74	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Dual Optocoupler, NPN Phototransistor Output, TTL compatible, DIP8/SMD8	
+U4	ILD74	Isolator:ILD74	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Dual Optocoupler, NPN Phototransistor Output, TTL compatible, DIP8/SMD8	
+U5	MAX485E	Interface_UART:MAX485E	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Half duplex RS-485/RS-422, 2.5 Mbps, ±15kV electro-static discharge (ESD) protection, no slew-rate, no low-power shutdown, with receiver/driver enable, 32 receiver drive kapacitity, DIP-8 and SOIC-8	
+U11	ILD74	Isolator:ILD74	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	Dual Optocoupler, NPN Phototransistor Output, TTL compatible, DIP8/SMD8	

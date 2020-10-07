@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "PowerCommander-rescue")(type "Legacy")(uri "${KIPRJMOD}/PowerCommander-rescue.lib")(options "")(descr ""))
+  (lib (name "bouni")(type "Legacy")(uri "${KIPRJMOD}/symbols/bouni.lib")(options "")(descr ""))
+)

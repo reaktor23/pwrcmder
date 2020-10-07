@@ -1,0 +1,3513 @@
+EESchema Schematic File Version 4
+LIBS:PowerCommander-cache
+EELAYER 29 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PowerCommander-rescue:Raspberry_Pi_2_3-conn J1
+U 1 1 5C07BED1
+P 2350 9350
+F 0 "J1" H 2350 10828 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2350 10737 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x20_Pitch2.54mm" H 3350 10600 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/RPI-3B-V1_2-SCHEMATIC-REDUCED.pdf" H 2400 9200 50  0001 C CNN
+F 4 "MPE 094-2-040" H -7400 6850 50  0001 C CNN "Reichelt"
+	1    2350 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 7700 2200 7700
+Wire Wire Line
+	2200 7700 2200 7650
+Connection ~ 2200 7700
+Wire Wire Line
+	2200 7700 2250 7700
+$Comp
+L power:+5V #PWR0104
+U 1 1 5C08119D
+P 2200 7650
+F 0 "#PWR0104" H 2200 7500 50  0001 C CNN
+F 1 "+5V" H 2215 7823 50  0000 C CNN
+F 2 "" H 2200 7650 50  0001 C CNN
+F 3 "" H 2200 7650 50  0001 C CNN
+	1    2200 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 10650 1950 10800
+Wire Wire Line
+	1950 10800 2050 10800
+Wire Wire Line
+	2650 10800 2650 10650
+Wire Wire Line
+	2550 10650 2550 10800
+Connection ~ 2550 10800
+Wire Wire Line
+	2550 10800 2650 10800
+Wire Wire Line
+	2450 10650 2450 10800
+Connection ~ 2450 10800
+Wire Wire Line
+	2450 10800 2550 10800
+Wire Wire Line
+	2350 10650 2350 10800
+Connection ~ 2350 10800
+Wire Wire Line
+	2350 10800 2450 10800
+Wire Wire Line
+	2250 10650 2250 10800
+Connection ~ 2250 10800
+Wire Wire Line
+	2250 10800 2350 10800
+Wire Wire Line
+	2150 10650 2150 10800
+Connection ~ 2150 10800
+Wire Wire Line
+	2150 10800 2250 10800
+Wire Wire Line
+	2050 10650 2050 10800
+Connection ~ 2050 10800
+Wire Wire Line
+	2050 10800 2150 10800
+Wire Wire Line
+	2050 10800 2050 10900
+$Comp
+L power:GND #PWR0105
+U 1 1 5C084176
+P 2050 10900
+F 0 "#PWR0105" H 2050 10650 50  0001 C CNN
+F 1 "GND" H 2055 10727 50  0000 C CNN
+F 2 "" H 2050 10900 50  0001 C CNN
+F 3 "" H 2050 10900 50  0001 C CNN
+	1    2050 10900
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerCommander-rescue:FINDER-30.22-relays K1
+U 1 1 5C09500E
+P 19600 4200
+F 0 "K1" H 20430 4200 50  0000 L CNN
+F 1 "FINDER-30.22" H 20430 4155 50  0001 L CNN
+F 2 "bouni:Relay_SPDT_Finder_32.22" H 21150 4170 50  0001 C CNN
+F 3 "http://gfinder.findernet.com/assets/Series/357/S41EN.pdf" H 19600 4200 50  0001 C CNN
+	1    19600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0101
+U 1 1 5C095306
+P 19400 3800
+F 0 "#PWR0101" H 19400 3650 50  0001 C CNN
+F 1 "+24V" H 19415 3973 50  0000 C CNN
+F 2 "" H 19400 3800 50  0001 C CNN
+F 3 "" H 19400 3800 50  0001 C CNN
+	1    19400 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 3900 19400 3800
+$Comp
+L PowerCommander-rescue:BSS138-transistors Q1
+U 1 1 5C095D73
+P 19300 4900
+F 0 "Q1" H 19505 4900 50  0000 L CNN
+F 1 "BSS138" H 19505 4855 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 19500 4825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 19300 4900 50  0001 L CNN
+F 4 "BSS 138 SMD" H 7500 -1850 50  0001 C CNN "Reichelt"
+	1    19300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5C097180
+P 19400 5300
+F 0 "#PWR0106" H 19400 5050 50  0001 C CNN
+F 1 "GND" H 19405 5127 50  0000 C CNN
+F 2 "" H 19400 5300 50  0001 C CNN
+F 3 "" H 19400 5300 50  0001 C CNN
+	1    19400 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 5300 19400 5200
+$Comp
+L PowerCommander-rescue:R-device R1
+U 1 1 5C097B71
+P 19150 5200
+F 0 "R1" V 18943 5200 50  0000 C CNN
+F 1 "10K" V 19034 5200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 19080 5200 50  0001 C CNN
+F 3 "~" H 19150 5200 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 7500 -1850 50  0001 C CNN "Reichelt"
+	1    19150 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19300 5200 19400 5200
+Connection ~ 19400 5200
+Wire Wire Line
+	19400 5200 19400 5100
+Wire Wire Line
+	19000 5200 18900 5200
+Wire Wire Line
+	18900 5200 18900 4900
+Wire Wire Line
+	18900 4900 19100 4900
+Wire Wire Line
+	18900 4900 18700 4900
+Connection ~ 18900 4900
+Text GLabel 18700 4900 0    50   Input ~ 0
+GPIO17
+Text GLabel 20700 10050 0    50   Input ~ 0
+ON2
+Text GLabel 20700 10450 0    50   Input ~ 0
+OFF2
+Text GLabel 20700 10550 0    50   Input ~ 0
+Q2
+Wire Wire Line
+	21050 4900 20850 4900
+Wire Wire Line
+	21050 5300 20750 5300
+Text GLabel 20750 5300 0    50   Input ~ 0
+OFF1
+Text GLabel 20750 4900 0    50   Input ~ 0
+ON1
+Text GLabel 20750 5400 0    50   Input ~ 0
+Q1
+$Comp
+L PowerCommander-rescue:FINDER-30.22-relays K2
+U 1 1 5C0A4EAE
+P 19600 6300
+F 0 "K2" H 20430 6300 50  0000 L CNN
+F 1 "FINDER-30.22" H 20430 6255 50  0001 L CNN
+F 2 "bouni:Relay_SPDT_Finder_32.22" H 21150 6270 50  0001 C CNN
+F 3 "http://gfinder.findernet.com/assets/Series/357/S41EN.pdf" H 19600 6300 50  0001 C CNN
+	1    19600 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0107
+U 1 1 5C0A4EB5
+P 19400 5900
+F 0 "#PWR0107" H 19400 5750 50  0001 C CNN
+F 1 "+24V" H 19415 6073 50  0000 C CNN
+F 2 "" H 19400 5900 50  0001 C CNN
+F 3 "" H 19400 5900 50  0001 C CNN
+	1    19400 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 6000 19400 5900
+$Comp
+L PowerCommander-rescue:BSS138-transistors Q2
+U 1 1 5C0A4EBC
+P 19300 7000
+F 0 "Q2" H 19505 7000 50  0000 L CNN
+F 1 "BSS138" H 19505 6955 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 19500 6925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 19300 7000 50  0001 L CNN
+F 4 "BSS 138 SMD" H 4850 200 50  0001 C CNN "Reichelt"
+	1    19300 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 6800 19400 6650
+$Comp
+L power:GND #PWR0108
+U 1 1 5C0A4EC4
+P 19400 7400
+F 0 "#PWR0108" H 19400 7150 50  0001 C CNN
+F 1 "GND" H 19405 7227 50  0000 C CNN
+F 2 "" H 19400 7400 50  0001 C CNN
+F 3 "" H 19400 7400 50  0001 C CNN
+	1    19400 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 7400 19400 7300
+$Comp
+L PowerCommander-rescue:R-device R2
+U 1 1 5C0A4ECB
+P 19150 7300
+F 0 "R2" V 18943 7300 50  0000 C CNN
+F 1 "10K" V 19034 7300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 19080 7300 50  0001 C CNN
+F 3 "~" H 19150 7300 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 4850 200 50  0001 C CNN "Reichelt"
+	1    19150 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19300 7300 19400 7300
+Connection ~ 19400 7300
+Wire Wire Line
+	19400 7300 19400 7200
+Wire Wire Line
+	19000 7300 18900 7300
+Wire Wire Line
+	18900 7300 18900 7000
+Wire Wire Line
+	18900 7000 19100 7000
+Wire Wire Line
+	18900 7000 18700 7000
+Text GLabel 18700 7000 0    50   Input ~ 0
+GPIO18
+Wire Wire Line
+	20800 4800 20800 4700
+Wire Wire Line
+	20800 4800 21050 4800
+$Comp
+L power:+24V #PWR0109
+U 1 1 5C0AC173
+P 20800 4700
+F 0 "#PWR0109" H 20800 4550 50  0001 C CNN
+F 1 "+24V" H 20815 4873 50  0000 C CNN
+F 2 "" H 20800 4700 50  0001 C CNN
+F 3 "" H 20800 4700 50  0001 C CNN
+	1    20800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5C0B1EB5
+P 20800 5600
+F 0 "#PWR0111" H 20800 5350 50  0001 C CNN
+F 1 "GND" H 20805 5427 50  0000 C CNN
+F 2 "" H 20800 5600 50  0001 C CNN
+F 3 "" H 20800 5600 50  0001 C CNN
+	1    20800 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19900 3900 19900 3800
+Text GLabel 19700 5900 1    50   Input ~ 0
+OFF1
+Wire Wire Line
+	19700 6000 19700 5900
+Wire Wire Line
+	19800 6600 19800 6650
+Text GLabel 19800 4550 3    50   Input ~ 0
+ON1
+Text GLabel 19800 6750 3    50   Input ~ 0
+Q1
+$Comp
+L PowerCommander-rescue:1N4148W-diode D3
+U 1 1 5C0CBC17
+P 19600 7000
+F 0 "D3" V 19554 7080 50  0000 L CNN
+F 1 "1N4148W" V 19645 7080 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 19600 6825 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 19600 7000 50  0001 C CNN
+F 4 "RND 1N4148W" H 4850 200 50  0001 C CNN "Reichelt"
+	1    19600 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19400 6650 19600 6650
+Wire Wire Line
+	19600 6650 19600 6850
+Wire Wire Line
+	19600 7300 19600 7150
+Wire Wire Line
+	19400 7300 19600 7300
+Connection ~ 19400 6650
+Wire Wire Line
+	19400 6650 19400 6600
+Wire Wire Line
+	19400 4500 19400 4550
+$Comp
+L PowerCommander-rescue:1N4148W-diode D2
+U 1 1 5C0D571A
+P 19600 4900
+F 0 "D2" V 19554 4980 50  0000 L CNN
+F 1 "1N4148W" V 19645 4980 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 19600 4725 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 19600 4900 50  0001 C CNN
+F 4 "RND 1N4148W" H 7500 -1850 50  0001 C CNN "Reichelt"
+	1    19600 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19400 4550 19600 4550
+Wire Wire Line
+	19600 4550 19600 4750
+Wire Wire Line
+	19600 5200 19600 5050
+Wire Wire Line
+	19400 5200 19600 5200
+Connection ~ 19400 4550
+Wire Wire Line
+	19400 4550 19400 4700
+$Comp
+L PowerCommander-rescue:FINDER-30.22-relays K3
+U 1 1 5C0DBD73
+P 19600 9250
+F 0 "K3" H 20430 9250 50  0000 L CNN
+F 1 "FINDER-30.22" H 20430 9205 50  0001 L CNN
+F 2 "bouni:Relay_SPDT_Finder_32.22" H 21150 9220 50  0001 C CNN
+F 3 "http://gfinder.findernet.com/assets/Series/357/S41EN.pdf" H 19600 9250 50  0001 C CNN
+	1    19600 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0114
+U 1 1 5C0DBD7A
+P 19400 8850
+F 0 "#PWR0114" H 19400 8700 50  0001 C CNN
+F 1 "+24V" H 19415 9023 50  0000 C CNN
+F 2 "" H 19400 8850 50  0001 C CNN
+F 3 "" H 19400 8850 50  0001 C CNN
+	1    19400 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 8950 19400 8850
+$Comp
+L PowerCommander-rescue:BSS138-transistors Q3
+U 1 1 5C0DBD81
+P 19300 9950
+F 0 "Q3" H 19505 9950 50  0000 L CNN
+F 1 "BSS138" H 19505 9905 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 19500 9875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 19300 9950 50  0001 L CNN
+F 4 "BSS 138 SMD" H 7500 950 50  0001 C CNN "Reichelt"
+	1    19300 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5C0DBD88
+P 19400 10350
+F 0 "#PWR0115" H 19400 10100 50  0001 C CNN
+F 1 "GND" H 19405 10177 50  0000 C CNN
+F 2 "" H 19400 10350 50  0001 C CNN
+F 3 "" H 19400 10350 50  0001 C CNN
+	1    19400 10350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 10350 19400 10250
+$Comp
+L PowerCommander-rescue:R-device R3
+U 1 1 5C0DBD8F
+P 19150 10250
+F 0 "R3" V 18943 10250 50  0000 C CNN
+F 1 "10K" V 19034 10250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 19080 10250 50  0001 C CNN
+F 3 "~" H 19150 10250 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 7500 950 50  0001 C CNN "Reichelt"
+	1    19150 10250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19300 10250 19400 10250
+Connection ~ 19400 10250
+Wire Wire Line
+	19400 10250 19400 10150
+Wire Wire Line
+	19000 10250 18900 10250
+Wire Wire Line
+	18900 10250 18900 9950
+Wire Wire Line
+	18900 9950 19100 9950
+Wire Wire Line
+	18900 9950 18700 9950
+Connection ~ 18900 9950
+Text GLabel 18700 12050 0    50   Input ~ 0
+GPIO27
+$Comp
+L PowerCommander-rescue:FINDER-30.22-relays K4
+U 1 1 5C0DBD9F
+P 19600 11350
+F 0 "K4" H 20430 11350 50  0000 L CNN
+F 1 "FINDER-30.22" H 20430 11305 50  0001 L CNN
+F 2 "bouni:Relay_SPDT_Finder_32.22" H 21150 11320 50  0001 C CNN
+F 3 "http://gfinder.findernet.com/assets/Series/357/S41EN.pdf" H 19600 11350 50  0001 C CNN
+	1    19600 11350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0116
+U 1 1 5C0DBDA6
+P 19400 10950
+F 0 "#PWR0116" H 19400 10800 50  0001 C CNN
+F 1 "+24V" H 19415 11123 50  0000 C CNN
+F 2 "" H 19400 10950 50  0001 C CNN
+F 3 "" H 19400 10950 50  0001 C CNN
+	1    19400 10950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 11050 19400 10950
+$Comp
+L PowerCommander-rescue:BSS138-transistors Q4
+U 1 1 5C0DBDAD
+P 19300 12050
+F 0 "Q4" H 19505 12050 50  0000 L CNN
+F 1 "BSS138" H 19505 12005 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 19500 11975 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 19300 12050 50  0001 L CNN
+F 4 "BSS 138 SMD" H 4850 3000 50  0001 C CNN "Reichelt"
+	1    19300 12050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 11850 19400 11700
+$Comp
+L power:GND #PWR0117
+U 1 1 5C0DBDB5
+P 19400 12450
+F 0 "#PWR0117" H 19400 12200 50  0001 C CNN
+F 1 "GND" H 19405 12277 50  0000 C CNN
+F 2 "" H 19400 12450 50  0001 C CNN
+F 3 "" H 19400 12450 50  0001 C CNN
+	1    19400 12450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 12450 19400 12350
+$Comp
+L PowerCommander-rescue:R-device R4
+U 1 1 5C0DBDBC
+P 19150 12350
+F 0 "R4" V 18943 12350 50  0000 C CNN
+F 1 "10K" V 19034 12350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 19080 12350 50  0001 C CNN
+F 3 "~" H 19150 12350 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 4850 3000 50  0001 C CNN "Reichelt"
+	1    19150 12350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19300 12350 19400 12350
+Connection ~ 19400 12350
+Wire Wire Line
+	19400 12350 19400 12250
+Wire Wire Line
+	19000 12350 18900 12350
+Wire Wire Line
+	18900 12350 18900 12050
+Wire Wire Line
+	18900 12050 19100 12050
+Wire Wire Line
+	18900 12050 18700 12050
+Text GLabel 18700 9950 0    50   Input ~ 0
+GPIO23
+Wire Wire Line
+	19900 8950 19900 8850
+Wire Wire Line
+	19800 9550 19800 9650
+Text GLabel 19800 9650 3    50   Input ~ 0
+ON2
+Wire Wire Line
+	19700 11050 19700 10950
+Wire Wire Line
+	19800 11650 19800 11700
+Text GLabel 19700 10950 1    50   Input ~ 0
+OFF2
+Text GLabel 19800 11800 3    50   Input ~ 0
+Q2
+$Comp
+L PowerCommander-rescue:1N4148W-diode D5
+U 1 1 5C0DBDD4
+P 19600 12050
+F 0 "D5" V 19554 12130 50  0000 L CNN
+F 1 "1N4148W" V 19645 12130 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 19600 11875 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 19600 12050 50  0001 C CNN
+F 4 "RND 1N4148W" H 4850 3000 50  0001 C CNN "Reichelt"
+	1    19600 12050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19400 11700 19600 11700
+Wire Wire Line
+	19600 11700 19600 11900
+Wire Wire Line
+	19600 12350 19600 12200
+Wire Wire Line
+	19400 12350 19600 12350
+Connection ~ 19400 11700
+Wire Wire Line
+	19400 11700 19400 11650
+Wire Wire Line
+	19400 9550 19400 9600
+$Comp
+L PowerCommander-rescue:1N4148W-diode D4
+U 1 1 5C0DBDE2
+P 19600 9950
+F 0 "D4" V 19554 10030 50  0000 L CNN
+F 1 "1N4148W" V 19645 10030 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 19600 9775 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 19600 9950 50  0001 C CNN
+F 4 "RND 1N4148W" H 7500 950 50  0001 C CNN "Reichelt"
+	1    19600 9950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19400 9600 19600 9600
+Wire Wire Line
+	19600 9600 19600 9800
+Wire Wire Line
+	19600 10250 19600 10100
+Wire Wire Line
+	19400 10250 19600 10250
+Connection ~ 19400 9600
+Wire Wire Line
+	19400 9600 19400 9750
+$Comp
+L PowerCommander-rescue:LED-device D6
+U 1 1 5C0F0E11
+P 20000 12250
+F 0 "D6" V 20038 12133 50  0000 R CNN
+F 1 "LED-OR" V 19947 12133 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 20000 12250 50  0001 C CNN
+F 3 "~" H 20000 12250 50  0001 C CNN
+F 4 "LA L296" H 4850 3000 50  0001 C CNN "Reichelt"
+	1    20000 12250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R5
+U 1 1 5C0F108C
+P 20000 11900
+F 0 "R5" V 19793 11900 50  0000 C CNN
+F 1 "4K7" V 19884 11900 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 19930 11900 50  0001 C CNN
+F 3 "~" H 20000 11900 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 4850 3000 50  0001 C CNN "Reichelt"
+	1    20000 11900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5C0F63C3
+P 20000 12450
+F 0 "#PWR0118" H 20000 12200 50  0001 C CNN
+F 1 "GND" H 20005 12277 50  0000 C CNN
+F 2 "" H 20000 12450 50  0001 C CNN
+F 3 "" H 20000 12450 50  0001 C CNN
+	1    20000 12450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19800 6650 20000 6650
+Wire Wire Line
+	20000 11700 20000 11750
+Connection ~ 19800 6650
+Wire Wire Line
+	19800 6650 19800 6750
+Wire Wire Line
+	20000 12050 20000 12100
+Wire Wire Line
+	20000 12400 20000 12450
+Wire Wire Line
+	20000 11700 19800 11700
+Connection ~ 19800 11700
+Wire Wire Line
+	19800 11700 19800 11800
+$Comp
+L PowerCommander-rescue:LED-device D7
+U 1 1 5C12B321
+P 20000 7200
+F 0 "D7" V 20038 7083 50  0000 R CNN
+F 1 "LED-OR" V 19947 7083 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 20000 7200 50  0001 C CNN
+F 3 "~" H 20000 7200 50  0001 C CNN
+F 4 "LA L296" H 4850 200 50  0001 C CNN "Reichelt"
+	1    20000 7200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R6
+U 1 1 5C12B327
+P 20000 6850
+F 0 "R6" V 19793 6850 50  0000 C CNN
+F 1 "4K7" V 19884 6850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 19930 6850 50  0001 C CNN
+F 3 "~" H 20000 6850 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 4850 200 50  0001 C CNN "Reichelt"
+	1    20000 6850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5C12B32D
+P 20000 7400
+F 0 "#PWR0119" H 20000 7150 50  0001 C CNN
+F 1 "GND" H 20005 7227 50  0000 C CNN
+F 2 "" H 20000 7400 50  0001 C CNN
+F 3 "" H 20000 7400 50  0001 C CNN
+	1    20000 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20000 6650 20000 6700
+Wire Wire Line
+	20000 7000 20000 7050
+Wire Wire Line
+	20000 7350 20000 7400
+$Comp
+L PowerCommander-rescue:Screw_Terminal_01x02-conn J2
+U 1 1 5C07DD80
+P 2050 14100
+F 0 "J2" H 1970 14317 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1970 14226 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 2050 14100 50  0001 C CNN
+F 3 "~" H 2050 14100 50  0001 C CNN
+F 4 "AKL 383-02" H 1100 12900 50  0001 C CNN "Reichelt"
+	1    2050 14100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 14100 2400 14100
+Wire Wire Line
+	2250 14200 2400 14200
+$Comp
+L power:GND #PWR0102
+U 1 1 5C162B28
+P 2400 14450
+F 0 "#PWR0102" H 2400 14200 50  0001 C CNN
+F 1 "GND" H 2405 14277 50  0000 C CNN
+F 2 "" H 2400 14450 50  0001 C CNN
+F 3 "" H 2400 14450 50  0001 C CNN
+	1    2400 14450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0103
+U 1 1 5C1635EB
+P 2400 13850
+F 0 "#PWR0103" H 2400 13700 50  0001 C CNN
+F 1 "+24V" H 2415 14023 50  0000 C CNN
+F 2 "" H 2400 13850 50  0001 C CNN
+F 3 "" H 2400 13850 50  0001 C CNN
+	1    2400 13850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0113
+U 1 1 5C163746
+P 2700 13850
+F 0 "#PWR0113" H 2700 13700 50  0001 C CNN
+F 1 "+5V" H 2715 14023 50  0000 C CNN
+F 2 "" H 2700 13850 50  0001 C CNN
+F 3 "" H 2700 13850 50  0001 C CNN
+	1    2700 13850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 14100 2400 13850
+Wire Wire Line
+	2400 14200 2400 14450
+Text GLabel 1350 8750 0    50   Input ~ 0
+GPIO17
+Text GLabel 1350 8850 0    50   Input ~ 0
+GPIO18
+Wire Wire Line
+	1450 9750 1350 9750
+Text GLabel 1350 9750 0    50   Input ~ 0
+GPIO27
+Text GLabel 1350 9250 0    50   Input ~ 0
+GPIO22
+Wire Wire Line
+	1350 9350 1450 9350
+Wire Wire Line
+	1350 9650 1450 9650
+Wire Wire Line
+	1350 9050 1450 9050
+Wire Wire Line
+	1350 9150 1450 9150
+Wire Wire Line
+	2250 7700 2250 8050
+Wire Wire Line
+	2150 7700 2150 8050
+$Comp
+L PowerCommander-rescue:Conn_01x20-conn J10
+U 1 1 5C102823
+P 5450 9300
+F 0 "J10" V 5667 9246 50  0000 C CNN
+F 1 "Conn_01x20" V 5576 9246 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch2.54mm" H 5450 9300 50  0001 C CNN
+F 3 "~" H 5450 9300 50  0001 C CNN
+	1    5450 9300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 8600 5750 8600
+Wire Wire Line
+	5650 8700 5750 8700
+Wire Wire Line
+	5650 8400 5750 8400
+Wire Wire Line
+	5650 8500 5750 8500
+Wire Wire Line
+	5650 9000 5750 9000
+Wire Wire Line
+	5650 9100 5750 9100
+Wire Wire Line
+	5650 8800 5750 8800
+Wire Wire Line
+	5650 8900 5750 8900
+Wire Wire Line
+	5650 9400 5750 9400
+Wire Wire Line
+	5650 9500 5750 9500
+Wire Wire Line
+	5650 9200 5750 9200
+Wire Wire Line
+	5650 9300 5750 9300
+Wire Wire Line
+	5650 9800 5750 9800
+Wire Wire Line
+	5650 9900 5750 9900
+Wire Wire Line
+	5650 9600 5750 9600
+Wire Wire Line
+	5650 9700 5750 9700
+Wire Wire Line
+	5650 10200 5750 10200
+Wire Wire Line
+	5650 10300 5750 10300
+Wire Wire Line
+	5650 10000 5750 10000
+Wire Wire Line
+	5650 10100 5750 10100
+Wire Wire Line
+	1350 9450 1450 9450
+Wire Wire Line
+	1350 9550 1450 9550
+Wire Wire Line
+	1350 9250 1450 9250
+Text GLabel 5750 8600 2    50   Input ~ 0
+GND
+Text GLabel 5750 8700 2    50   Input ~ 0
+GPIO14
+Text GLabel 5750 8800 2    50   Input ~ 0
+GPIO15
+Text GLabel 5750 8900 2    50   Input ~ 0
+GPIO18
+Text GLabel 5750 9100 2    50   Input ~ 0
+GPIO23
+Text GLabel 5750 9200 2    50   Input ~ 0
+GPIO24
+Text GLabel 5750 9400 2    50   Input ~ 0
+GPIO25
+Text GLabel 5750 9500 2    50   Input ~ 0
+GPIO8
+Text GLabel 5750 9600 2    50   Input ~ 0
+GPIO7
+Text GLabel 5750 9700 2    50   Input ~ 0
+ID_SC
+Text GLabel 5750 9900 2    50   Input ~ 0
+GPIO12
+Text GLabel 5750 10100 2    50   Input ~ 0
+GPIO16
+Text GLabel 5750 10200 2    50   Input ~ 0
+GPIO20
+Text GLabel 5750 10300 2    50   Input ~ 0
+GPIO21
+Text GLabel 1350 8650 0    50   Input ~ 0
+GPIO16
+Text GLabel 1350 8950 0    50   Input ~ 0
+GPIO19
+Text GLabel 1350 9050 0    50   Input ~ 0
+GPIO20
+Text GLabel 1350 9150 0    50   Input ~ 0
+GPIO21
+Wire Wire Line
+	1350 8650 1450 8650
+Wire Wire Line
+	1350 8950 1450 8950
+Wire Wire Line
+	1350 8750 1450 8750
+Wire Wire Line
+	1350 8850 1450 8850
+Text GLabel 1350 9350 0    50   Input ~ 0
+GPIO23
+Text GLabel 1350 9450 0    50   Input ~ 0
+GPIO24
+Text GLabel 1350 9550 0    50   Input ~ 0
+GPIO25
+Text GLabel 1350 9650 0    50   Input ~ 0
+GPIO26
+Wire Wire Line
+	1350 10150 1450 10150
+Wire Wire Line
+	1350 10050 1450 10050
+Text GLabel 1350 10050 0    50   Input ~ 0
+ID_SD
+Text GLabel 1350 10150 0    50   Input ~ 0
+ID_SC
+Text GLabel 5750 10000 2    50   Input ~ 0
+GND
+Text GLabel 5750 9800 2    50   Input ~ 0
+GND
+Text GLabel 5750 9300 2    50   Input ~ 0
+GND
+Text GLabel 5750 9000 2    50   Input ~ 0
+GND
+Text GLabel 5750 8500 2    50   Input ~ 0
++5V
+Text GLabel 5750 8400 2    50   Input ~ 0
++5V
+Wire Wire Line
+	2450 8050 2450 7700
+Wire Wire Line
+	2450 7700 2500 7700
+Wire Wire Line
+	2550 7700 2550 8050
+Wire Wire Line
+	2500 7650 2500 7700
+Connection ~ 2500 7700
+Wire Wire Line
+	2500 7700 2550 7700
+$Comp
+L power:+3.3V #PWR0120
+U 1 1 5C194F1A
+P 2500 7650
+F 0 "#PWR0120" H 2500 7500 50  0001 C CNN
+F 1 "+3.3V" H 2515 7823 50  0000 C CNN
+F 2 "" H 2500 7650 50  0001 C CNN
+F 3 "" H 2500 7650 50  0001 C CNN
+	1    2500 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 8450 3350 8450
+Wire Wire Line
+	3250 8550 3350 8550
+Wire Wire Line
+	3250 8650 3350 8650
+Wire Wire Line
+	3250 8850 3350 8850
+Wire Wire Line
+	3250 8950 3350 8950
+Wire Wire Line
+	3250 9150 3350 9150
+Wire Wire Line
+	3250 9250 3350 9250
+Wire Wire Line
+	3250 9350 3350 9350
+Wire Wire Line
+	3250 9450 3350 9450
+Wire Wire Line
+	3250 9550 3350 9550
+Wire Wire Line
+	3250 9750 3350 9750
+Wire Wire Line
+	3250 9850 3350 9850
+Wire Wire Line
+	3250 10050 3350 10050
+Wire Wire Line
+	3250 10150 3350 10150
+Text GLabel 3350 8450 2    50   Input ~ 0
+GPIO2
+Text GLabel 3350 8550 2    50   Input ~ 0
+GPIO3
+Text GLabel 3350 8650 2    50   Input ~ 0
+GPIO4
+Text GLabel 3350 8850 2    50   Input ~ 0
+GPIO5
+Text GLabel 3350 8950 2    50   Input ~ 0
+GPIO6
+Text GLabel 3350 9150 2    50   Input ~ 0
+GPIO7
+Text GLabel 3350 9250 2    50   Input ~ 0
+GPIO8
+Text GLabel 3350 9350 2    50   Input ~ 0
+GPIO9
+Text GLabel 3350 9450 2    50   Input ~ 0
+GPIO10
+Text GLabel 3350 9550 2    50   Input ~ 0
+GPIO11
+Text GLabel 3350 9750 2    50   Input ~ 0
+GPIO12
+Text GLabel 3350 9850 2    50   Input ~ 0
+GPIO13
+Text GLabel 3350 10050 2    50   Input ~ 0
+GPIO14
+Text GLabel 3350 10150 2    50   Input ~ 0
+GPIO15
+$Comp
+L PowerCommander-rescue:Conn_01x20-conn J11
+U 1 1 5C1D6AF9
+P 4900 9300
+F 0 "J11" V 5117 9246 50  0000 C CNN
+F 1 "Conn_01x20" V 5026 9246 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch2.54mm" H 4900 9300 50  0001 C CNN
+F 3 "~" H 4900 9300 50  0001 C CNN
+	1    4900 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 8600 4600 8600
+Wire Wire Line
+	4700 8700 4600 8700
+Wire Wire Line
+	4700 8400 4600 8400
+Wire Wire Line
+	4700 8500 4600 8500
+Wire Wire Line
+	4700 9000 4600 9000
+Wire Wire Line
+	4700 9100 4600 9100
+Wire Wire Line
+	4700 8800 4600 8800
+Wire Wire Line
+	4700 8900 4600 8900
+Wire Wire Line
+	4700 9400 4600 9400
+Wire Wire Line
+	4700 9500 4600 9500
+Wire Wire Line
+	4700 9200 4600 9200
+Wire Wire Line
+	4700 9300 4600 9300
+Wire Wire Line
+	4700 9800 4600 9800
+Wire Wire Line
+	4700 9900 4600 9900
+Wire Wire Line
+	4700 9600 4600 9600
+Wire Wire Line
+	4700 9700 4600 9700
+Wire Wire Line
+	4700 10200 4600 10200
+Wire Wire Line
+	4700 10300 4600 10300
+Wire Wire Line
+	4700 10000 4600 10000
+Wire Wire Line
+	4700 10100 4600 10100
+Text GLabel 4600 8600 0    50   Input ~ 0
+GPIO3
+Text GLabel 4600 8700 0    50   Input ~ 0
+GPIO4
+Text GLabel 4600 8800 0    50   Input ~ 0
+GND
+Text GLabel 4600 8900 0    50   Input ~ 0
+GPIO17
+Text GLabel 4600 9100 0    50   Input ~ 0
+GPIO22
+Text GLabel 4600 9200 0    50   Input ~ 0
++3V3
+Text GLabel 4600 9400 0    50   Input ~ 0
+GPIO9
+Text GLabel 4600 9500 0    50   Input ~ 0
+GPIO11
+Text GLabel 4600 9600 0    50   Input ~ 0
+GND
+Text GLabel 4600 9700 0    50   Input ~ 0
+ID_SD
+Text GLabel 4600 9900 0    50   Input ~ 0
+GPIO6
+Text GLabel 4600 10100 0    50   Input ~ 0
+GPIO19
+Text GLabel 4600 10200 0    50   Input ~ 0
+GPIO26
+Text GLabel 4600 10300 0    50   Input ~ 0
+GND
+Text GLabel 4600 10000 0    50   Input ~ 0
+GPIO13
+Text GLabel 4600 9800 0    50   Input ~ 0
+GPIO5
+Text GLabel 4600 9300 0    50   Input ~ 0
+GPIO10
+Text GLabel 4600 9000 0    50   Input ~ 0
+GPIO27
+Text GLabel 4600 8500 0    50   Input ~ 0
+GPIO2
+Text GLabel 4600 8400 0    50   Input ~ 0
++3V3
+$Comp
+L PowerCommander-rescue:HW-013-bouni U1
+U 1 1 5C28C1FB
+P 3300 14250
+F 0 "U1" H 3527 14296 50  0000 L CNN
+F 1 "HW-013" H 3527 14205 50  0000 L CNN
+F 2 "Bouni:HW-013" H 3400 14250 50  0001 C CNN
+F 3 "" H 3400 14250 50  0001 C CNN
+	1    3300 14250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15350 4250 15450 4250
+$Comp
+L PowerCommander-rescue:FINDER-30.22-relays K5
+U 1 1 5C2D64E8
+P 13850 4250
+F 0 "K5" H 14680 4250 50  0000 L CNN
+F 1 "FINDER-30.22" H 14680 4205 50  0001 L CNN
+F 2 "Bouni:Relay_SPST_Finder_32.21-x300" H 15400 4220 50  0001 C CNN
+F 3 "http://gfinder.findernet.com/assets/Series/357/S41EN.pdf" H 13850 4250 50  0001 C CNN
+	1    13850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0121
+U 1 1 5C2D64EE
+P 13650 3850
+F 0 "#PWR0121" H 13650 3700 50  0001 C CNN
+F 1 "+24V" H 13665 4023 50  0000 C CNN
+F 2 "" H 13650 3850 50  0001 C CNN
+F 3 "" H 13650 3850 50  0001 C CNN
+	1    13650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 3950 13650 3850
+$Comp
+L PowerCommander-rescue:BSS138-transistors Q5
+U 1 1 5C2D64F5
+P 13550 5450
+F 0 "Q5" H 13755 5450 50  0000 L CNN
+F 1 "BSS138" H 13755 5405 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 13750 5375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 13550 5450 50  0001 L CNN
+F 4 "BSS 138 SMD" H 7100 -4900 50  0001 C CNN "Reichelt"
+	1    13550 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5C2D64FB
+P 13650 5850
+F 0 "#PWR0122" H 13650 5600 50  0001 C CNN
+F 1 "GND" H 13655 5677 50  0000 C CNN
+F 2 "" H 13650 5850 50  0001 C CNN
+F 3 "" H 13650 5850 50  0001 C CNN
+	1    13650 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 5850 13650 5750
+$Comp
+L PowerCommander-rescue:R-device R7
+U 1 1 5C2D6502
+P 13400 5750
+F 0 "R7" V 13193 5750 50  0000 C CNN
+F 1 "10K" V 13284 5750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 13330 5750 50  0001 C CNN
+F 3 "~" H 13400 5750 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 7100 -4900 50  0001 C CNN "Reichelt"
+	1    13400 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13550 5750 13650 5750
+Connection ~ 13650 5750
+Wire Wire Line
+	13650 5750 13650 5650
+Wire Wire Line
+	13250 5750 13150 5750
+Wire Wire Line
+	13150 5750 13150 5450
+Wire Wire Line
+	13150 5450 13350 5450
+Wire Wire Line
+	13150 5450 12950 5450
+Connection ~ 13150 5450
+Text GLabel 12950 10450 0    50   Input ~ 0
+GPIO12
+$Comp
+L PowerCommander-rescue:FINDER-30.22-relays K7
+U 1 1 5C2D6511
+P 13850 9250
+F 0 "K7" H 14680 9250 50  0000 L CNN
+F 1 "FINDER-30.22" H 14680 9205 50  0001 L CNN
+F 2 "Bouni:Relay_SPST_Finder_32.21-x300" H 15400 9220 50  0001 C CNN
+F 3 "http://gfinder.findernet.com/assets/Series/357/S41EN.pdf" H 13850 9250 50  0001 C CNN
+	1    13850 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0123
+U 1 1 5C2D6517
+P 13650 8850
+F 0 "#PWR0123" H 13650 8700 50  0001 C CNN
+F 1 "+24V" H 13665 9023 50  0000 C CNN
+F 2 "" H 13650 8850 50  0001 C CNN
+F 3 "" H 13650 8850 50  0001 C CNN
+	1    13650 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 8950 13650 8850
+$Comp
+L PowerCommander-rescue:BSS138-transistors Q7
+U 1 1 5C2D651E
+P 13550 10450
+F 0 "Q7" H 13755 10450 50  0000 L CNN
+F 1 "BSS138" H 13755 10405 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 13750 10375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 13550 10450 50  0001 L CNN
+F 4 "BSS 138 SMD" H 4700 100 50  0001 C CNN "Reichelt"
+	1    13550 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 10250 13650 10050
+$Comp
+L power:GND #PWR0124
+U 1 1 5C2D6525
+P 13650 10850
+F 0 "#PWR0124" H 13650 10600 50  0001 C CNN
+F 1 "GND" H 13655 10677 50  0000 C CNN
+F 2 "" H 13650 10850 50  0001 C CNN
+F 3 "" H 13650 10850 50  0001 C CNN
+	1    13650 10850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 10850 13650 10750
+$Comp
+L PowerCommander-rescue:R-device R9
+U 1 1 5C2D652C
+P 13400 10750
+F 0 "R9" V 13193 10750 50  0000 C CNN
+F 1 "10K" V 13284 10750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 13330 10750 50  0001 C CNN
+F 3 "~" H 13400 10750 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 4700 100 50  0001 C CNN "Reichelt"
+	1    13400 10750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13550 10750 13650 10750
+Connection ~ 13650 10750
+Wire Wire Line
+	13650 10750 13650 10650
+Wire Wire Line
+	13250 10750 13150 10750
+Wire Wire Line
+	13150 10750 13150 10450
+Wire Wire Line
+	13150 10450 13350 10450
+Wire Wire Line
+	13150 10450 12950 10450
+Text GLabel 12950 5450 0    50   Input ~ 0
+GPIO6
+Wire Wire Line
+	13950 3950 13950 3850
+$Comp
+L PowerCommander-rescue:1N4148W-diode D9
+U 1 1 5C2D6543
+P 13850 10450
+F 0 "D9" V 13804 10530 50  0000 L CNN
+F 1 "1N4148W" V 13895 10530 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 13850 10275 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 13850 10450 50  0001 C CNN
+F 4 "RND 1N4148W" H 4700 100 50  0001 C CNN "Reichelt"
+	1    13850 10450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 10050 13850 10050
+Wire Wire Line
+	13850 10050 13850 10300
+Wire Wire Line
+	13850 10750 13850 10600
+Wire Wire Line
+	13650 10750 13850 10750
+Connection ~ 13650 10050
+Wire Wire Line
+	13650 10050 13650 9550
+Wire Wire Line
+	13650 4550 13650 5050
+$Comp
+L PowerCommander-rescue:1N4148W-diode D1
+U 1 1 5C2D6550
+P 13850 5450
+F 0 "D1" V 13804 5530 50  0000 L CNN
+F 1 "1N4148W" V 13895 5530 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 13850 5275 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 13850 5450 50  0001 C CNN
+F 4 "RND 1N4148W" H 7100 -4900 50  0001 C CNN "Reichelt"
+	1    13850 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 5050 13850 5050
+Wire Wire Line
+	13850 5050 13850 5300
+Wire Wire Line
+	13850 5750 13850 5600
+Wire Wire Line
+	13650 5750 13850 5750
+Connection ~ 13650 5050
+Wire Wire Line
+	13650 5050 13650 5250
+Wire Wire Line
+	14150 3950 14150 3850
+Wire Wire Line
+	14050 4550 14050 4650
+Wire Wire Line
+	13950 8950 13950 8850
+Wire Wire Line
+	14150 8950 14150 8850
+Wire Wire Line
+	14050 9550 14050 9650
+Text GLabel 13950 3850 1    50   Input ~ 0
+NC1
+Text GLabel 14150 3850 1    50   Input ~ 0
+NO1
+Text GLabel 14050 4650 3    50   Input ~ 0
+C1
+Text GLabel 14050 9650 3    50   Input ~ 0
+C2
+Text GLabel 13950 8850 1    50   Input ~ 0
+NC2
+Text GLabel 14150 8850 1    50   Input ~ 0
+NO2
+Text GLabel 15350 4250 0    50   Input ~ 0
+NC1
+Text GLabel 15350 4350 0    50   Input ~ 0
+C1
+Text GLabel 15350 4450 0    50   Input ~ 0
+NO1
+Text GLabel 15350 9250 0    50   Input ~ 0
+NC2
+Text GLabel 15350 9350 0    50   Input ~ 0
+C2
+Text GLabel 15350 9450 0    50   Input ~ 0
+NO2
+$Comp
+L PowerCommander-rescue:FINDER-30.22-relays K6
+U 1 1 5C3BDE78
+P 13850 6800
+F 0 "K6" H 14680 6800 50  0000 L CNN
+F 1 "FINDER-30.22" H 14680 6755 50  0001 L CNN
+F 2 "Bouni:Relay_SPST_Finder_32.21-x300" H 15400 6770 50  0001 C CNN
+F 3 "http://gfinder.findernet.com/assets/Series/357/S41EN.pdf" H 13850 6800 50  0001 C CNN
+	1    13850 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0125
+U 1 1 5C3BDE7E
+P 13650 6400
+F 0 "#PWR0125" H 13650 6250 50  0001 C CNN
+F 1 "+24V" H 13665 6573 50  0000 C CNN
+F 2 "" H 13650 6400 50  0001 C CNN
+F 3 "" H 13650 6400 50  0001 C CNN
+	1    13650 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 6500 13650 6400
+$Comp
+L PowerCommander-rescue:BSS138-transistors Q6
+U 1 1 5C3BDE85
+P 13550 7900
+F 0 "Q6" H 13755 7900 50  0000 L CNN
+F 1 "BSS138" H 13755 7855 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 13750 7825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 13550 7900 50  0001 L CNN
+F 4 "BSS 138 SMD" H 11800 -2350 50  0001 C CNN "Reichelt"
+	1    13550 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5C3BDE8B
+P 13650 8300
+F 0 "#PWR0126" H 13650 8050 50  0001 C CNN
+F 1 "GND" H 13655 8127 50  0000 C CNN
+F 2 "" H 13650 8300 50  0001 C CNN
+F 3 "" H 13650 8300 50  0001 C CNN
+	1    13650 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 8300 13650 8200
+$Comp
+L PowerCommander-rescue:R-device R8
+U 1 1 5C3BDE92
+P 13400 8200
+F 0 "R8" V 13193 8200 50  0000 C CNN
+F 1 "10K" V 13284 8200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 13330 8200 50  0001 C CNN
+F 3 "~" H 13400 8200 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 11800 -2350 50  0001 C CNN "Reichelt"
+	1    13400 8200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13550 8200 13650 8200
+Connection ~ 13650 8200
+Wire Wire Line
+	13650 8200 13650 8100
+Wire Wire Line
+	13250 8200 13150 8200
+Wire Wire Line
+	13150 8200 13150 7900
+Wire Wire Line
+	13150 7900 13350 7900
+Wire Wire Line
+	13150 7900 12950 7900
+Connection ~ 13150 7900
+Text GLabel 12950 7900 0    50   Input ~ 0
+GPIO13
+$Comp
+L PowerCommander-rescue:FINDER-30.22-relays K8
+U 1 1 5C3BDEA1
+P 13850 11850
+F 0 "K8" H 14680 11850 50  0000 L CNN
+F 1 "FINDER-30.22" H 14680 11805 50  0001 L CNN
+F 2 "Bouni:Relay_SPST_Finder_32.21-x300" H 15400 11820 50  0001 C CNN
+F 3 "http://gfinder.findernet.com/assets/Series/357/S41EN.pdf" H 13850 11850 50  0001 C CNN
+	1    13850 11850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0127
+U 1 1 5C3BDEA7
+P 13650 11450
+F 0 "#PWR0127" H 13650 11300 50  0001 C CNN
+F 1 "+24V" H 13665 11623 50  0000 C CNN
+F 2 "" H 13650 11450 50  0001 C CNN
+F 3 "" H 13650 11450 50  0001 C CNN
+	1    13650 11450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 11550 13650 11450
+$Comp
+L PowerCommander-rescue:BSS138-transistors Q8
+U 1 1 5C3BDEAE
+P 13550 12950
+F 0 "Q8" H 13755 12950 50  0000 L CNN
+F 1 "BSS138" H 13755 12905 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 13750 12875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 13550 12950 50  0001 L CNN
+F 4 "BSS 138 SMD" H 9400 2700 50  0001 C CNN "Reichelt"
+	1    13550 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 12750 13650 12500
+$Comp
+L power:GND #PWR0128
+U 1 1 5C3BDEB5
+P 13650 13350
+F 0 "#PWR0128" H 13650 13100 50  0001 C CNN
+F 1 "GND" H 13655 13177 50  0000 C CNN
+F 2 "" H 13650 13350 50  0001 C CNN
+F 3 "" H 13650 13350 50  0001 C CNN
+	1    13650 13350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 13350 13650 13250
+$Comp
+L PowerCommander-rescue:R-device R10
+U 1 1 5C3BDEBC
+P 13400 13250
+F 0 "R10" V 13193 13250 50  0000 C CNN
+F 1 "10K" V 13284 13250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 13330 13250 50  0001 C CNN
+F 3 "~" H 13400 13250 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 9400 2700 50  0001 C CNN "Reichelt"
+	1    13400 13250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13550 13250 13650 13250
+Connection ~ 13650 13250
+Wire Wire Line
+	13650 13250 13650 13150
+Wire Wire Line
+	13250 13250 13150 13250
+Wire Wire Line
+	13150 13250 13150 12950
+Wire Wire Line
+	13150 12950 13350 12950
+Wire Wire Line
+	13150 12950 12950 12950
+Text GLabel 12950 12950 0    50   Input ~ 0
+GPIO19
+Wire Wire Line
+	13950 6500 13950 6400
+$Comp
+L PowerCommander-rescue:1N4148W-diode D10
+U 1 1 5C3BDECC
+P 13850 12950
+F 0 "D10" V 13804 13030 50  0000 L CNN
+F 1 "1N4148W" V 13895 13030 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 13850 12775 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 13850 12950 50  0001 C CNN
+F 4 "RND 1N4148W" H 9400 2700 50  0001 C CNN "Reichelt"
+	1    13850 12950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 12500 13850 12500
+Wire Wire Line
+	13850 12500 13850 12800
+Wire Wire Line
+	13850 13250 13850 13100
+Wire Wire Line
+	13650 13250 13850 13250
+Connection ~ 13650 12500
+Wire Wire Line
+	13650 12500 13650 12150
+Wire Wire Line
+	13650 7100 13650 7450
+$Comp
+L PowerCommander-rescue:1N4148W-diode D8
+U 1 1 5C3BDED9
+P 13850 7900
+F 0 "D8" V 13804 7980 50  0000 L CNN
+F 1 "1N4148W" V 13895 7980 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 13850 7725 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 13850 7900 50  0001 C CNN
+F 4 "RND 1N4148W" H 11800 -2350 50  0001 C CNN "Reichelt"
+	1    13850 7900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 7450 13850 7450
+Wire Wire Line
+	13850 7450 13850 7750
+Wire Wire Line
+	13850 8200 13850 8050
+Wire Wire Line
+	13650 8200 13850 8200
+Connection ~ 13650 7450
+Wire Wire Line
+	13650 7450 13650 7700
+Wire Wire Line
+	14150 6500 14150 6400
+Wire Wire Line
+	14050 7100 14050 7200
+Wire Wire Line
+	13950 11550 13950 11450
+Wire Wire Line
+	14150 11550 14150 11450
+Wire Wire Line
+	14050 12150 14050 12250
+Text GLabel 13950 6400 1    50   Input ~ 0
+NC3
+Text GLabel 14150 6400 1    50   Input ~ 0
+NO3
+Text GLabel 14050 7200 3    50   Input ~ 0
+C3
+Text GLabel 14050 12250 3    50   Input ~ 0
+C4
+Text GLabel 13950 11450 1    50   Input ~ 0
+NC4
+Text GLabel 14150 11450 1    50   Input ~ 0
+NO4
+Text GLabel 15350 6800 0    50   Input ~ 0
+NC3
+Text GLabel 15350 6900 0    50   Input ~ 0
+C3
+Text GLabel 15350 7000 0    50   Input ~ 0
+NO3
+Text GLabel 15350 11850 0    50   Input ~ 0
+NC4
+Text GLabel 15350 11950 0    50   Input ~ 0
+C4
+Text GLabel 15350 12050 0    50   Input ~ 0
+NO4
+Connection ~ 13150 10450
+Connection ~ 13150 12950
+$Comp
+L PowerCommander-rescue:LED-device D11
+U 1 1 5C4B1ED2
+P 14500 5050
+F 0 "D11" V 14538 4933 50  0000 R CNN
+F 1 "LED-OR" V 14447 4933 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 14500 5050 50  0001 C CNN
+F 3 "~" H 14500 5050 50  0001 C CNN
+F 4 "LA L296" H 7100 -4900 50  0001 C CNN "Reichelt"
+	1    14500 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R11
+U 1 1 5C4B1ED9
+P 14150 5050
+F 0 "R11" V 13943 5050 50  0000 C CNN
+F 1 "4K7" V 14034 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 14080 5050 50  0001 C CNN
+F 3 "~" H 14150 5050 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 7100 -4900 50  0001 C CNN "Reichelt"
+	1    14150 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14300 5050 14350 5050
+Wire Wire Line
+	14650 5050 14950 5050
+Wire Wire Line
+	14950 5050 14950 3850
+$Comp
+L power:+24V #PWR0129
+U 1 1 5C50FA57
+P 14950 3850
+F 0 "#PWR0129" H 14950 3700 50  0001 C CNN
+F 1 "+24V" H 14965 4023 50  0000 C CNN
+F 2 "" H 14950 3850 50  0001 C CNN
+F 3 "" H 14950 3850 50  0001 C CNN
+	1    14950 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 5050 13850 5050
+Connection ~ 13850 5050
+$Comp
+L PowerCommander-rescue:LED-device D13
+U 1 1 5C582F57
+P 14500 10050
+F 0 "D13" V 14538 9933 50  0000 R CNN
+F 1 "LED-OR" V 14447 9933 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 14500 10050 50  0001 C CNN
+F 3 "~" H 14500 10050 50  0001 C CNN
+F 4 "LA L296" H 4700 100 50  0001 C CNN "Reichelt"
+	1    14500 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R13
+U 1 1 5C582F5E
+P 14150 10050
+F 0 "R13" V 13943 10050 50  0000 C CNN
+F 1 "4K7" V 14034 10050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 14080 10050 50  0001 C CNN
+F 3 "~" H 14150 10050 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 4700 100 50  0001 C CNN "Reichelt"
+	1    14150 10050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14300 10050 14350 10050
+Wire Wire Line
+	14650 10050 14950 10050
+Wire Wire Line
+	14950 10050 14950 8850
+Wire Wire Line
+	14000 10050 13850 10050
+$Comp
+L PowerCommander-rescue:LED-device D12
+U 1 1 5C599607
+P 14500 7450
+F 0 "D12" V 14538 7333 50  0000 R CNN
+F 1 "LED-OR" V 14447 7333 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 14500 7450 50  0001 C CNN
+F 3 "~" H 14500 7450 50  0001 C CNN
+F 4 "LA L296" H 11800 -2350 50  0001 C CNN "Reichelt"
+	1    14500 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R12
+U 1 1 5C59960E
+P 14150 7450
+F 0 "R12" V 13943 7450 50  0000 C CNN
+F 1 "4K7" V 14034 7450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 14080 7450 50  0001 C CNN
+F 3 "~" H 14150 7450 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 11800 -2350 50  0001 C CNN "Reichelt"
+	1    14150 7450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14300 7450 14350 7450
+Wire Wire Line
+	14650 7450 14950 7450
+Wire Wire Line
+	14950 7450 14950 6400
+Wire Wire Line
+	14000 7450 13850 7450
+$Comp
+L PowerCommander-rescue:LED-device D14
+U 1 1 5C5B0865
+P 14500 12500
+F 0 "D14" V 14538 12383 50  0000 R CNN
+F 1 "LED-OR" V 14447 12383 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 14500 12500 50  0001 C CNN
+F 3 "~" H 14500 12500 50  0001 C CNN
+F 4 "LA L296" H 9400 2700 50  0001 C CNN "Reichelt"
+	1    14500 12500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R14
+U 1 1 5C5B086C
+P 14150 12500
+F 0 "R14" V 13943 12500 50  0000 C CNN
+F 1 "4K7" V 14034 12500 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 14080 12500 50  0001 C CNN
+F 3 "~" H 14150 12500 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 9400 2700 50  0001 C CNN "Reichelt"
+	1    14150 12500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14300 12500 14350 12500
+Wire Wire Line
+	14650 12500 14950 12500
+Wire Wire Line
+	14950 12500 14950 11450
+Wire Wire Line
+	14000 12500 13850 12500
+$Comp
+L power:+24V #PWR0130
+U 1 1 5C5C86CF
+P 14950 8850
+F 0 "#PWR0130" H 14950 8700 50  0001 C CNN
+F 1 "+24V" H 14965 9023 50  0000 C CNN
+F 2 "" H 14950 8850 50  0001 C CNN
+F 3 "" H 14950 8850 50  0001 C CNN
+	1    14950 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0131
+U 1 1 5C5C88D0
+P 14950 6400
+F 0 "#PWR0131" H 14950 6250 50  0001 C CNN
+F 1 "+24V" H 14965 6573 50  0000 C CNN
+F 2 "" H 14950 6400 50  0001 C CNN
+F 3 "" H 14950 6400 50  0001 C CNN
+	1    14950 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0132
+U 1 1 5C5E1D6F
+P 14950 11450
+F 0 "#PWR0132" H 14950 11300 50  0001 C CNN
+F 1 "+24V" H 14965 11623 50  0000 C CNN
+F 2 "" H 14950 11450 50  0001 C CNN
+F 3 "" H 14950 11450 50  0001 C CNN
+	1    14950 11450
+	1    0    0    -1  
+$EndComp
+Connection ~ 13850 10050
+Connection ~ 13850 12500
+Connection ~ 13850 7450
+Connection ~ 18900 12050
+Connection ~ 18900 7000
+Wire Wire Line
+	5650 3550 5500 3550
+Wire Wire Line
+	5500 3550 5500 3400
+Wire Wire Line
+	5650 4450 5500 4450
+Wire Wire Line
+	5500 4450 5500 4600
+$Comp
+L power:GND #PWR0133
+U 1 1 5C76E2A9
+P 5500 4600
+F 0 "#PWR0133" H 5500 4350 50  0001 C CNN
+F 1 "GND" H 5505 4427 50  0000 C CNN
+F 2 "" H 5500 4600 50  0001 C CNN
+F 3 "" H 5500 4600 50  0001 C CNN
+	1    5500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0134
+U 1 1 5C76E97C
+P 5500 3400
+F 0 "#PWR0134" H 5500 3250 50  0001 C CNN
+F 1 "+24V" H 5515 3573 50  0000 C CNN
+F 2 "" H 5500 3400 50  0001 C CNN
+F 3 "" H 5500 3400 50  0001 C CNN
+	1    5500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 5C9D7962
+P 2900 6500
+F 0 "#PWR0135" H 2900 6250 50  0001 C CNN
+F 1 "GND" H 2905 6327 50  0000 C CNN
+F 2 "" H 2900 6500 50  0001 C CNN
+F 3 "" H 2900 6500 50  0001 C CNN
+	1    2900 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5CB34559
+P 1550 6500
+F 0 "#PWR0136" H 1550 6250 50  0001 C CNN
+F 1 "GND" H 1555 6327 50  0000 C CNN
+F 2 "" H 1550 6500 50  0001 C CNN
+F 3 "" H 1550 6500 50  0001 C CNN
+	1    1550 6500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1300 3000 0    50   Input ~ 0
+GPIO11
+Text GLabel 1300 3600 0    50   Input ~ 0
+GPIO8
+Text GLabel 1300 2400 0    50   Input ~ 0
+GPIO7
+$Comp
+L PowerCommander-rescue:LED-device D17
+U 1 1 5CC5AB36
+P 3150 6350
+F 0 "D17" H 3400 6300 50  0000 R CNN
+F 1 "LED-GR" V 3097 6233 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 3150 6350 50  0001 C CNN
+F 3 "~" H 3150 6350 50  0001 C CNN
+F 4 "LG L29K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 14100 2700 14100
+Wire Wire Line
+	2700 14100 2700 13850
+Wire Wire Line
+	2400 14100 2550 14100
+Wire Wire Line
+	2550 14100 2550 14300
+Wire Wire Line
+	2550 14300 2900 14300
+Connection ~ 2400 14100
+Wire Wire Line
+	2400 14200 2900 14200
+Connection ~ 2400 14200
+$Comp
+L power:+3.3V #PWR0137
+U 1 1 5D23CA03
+P 1650 1300
+F 0 "#PWR0137" H 1650 1150 50  0001 C CNN
+F 1 "+3.3V" H 1665 1473 50  0000 C CNN
+F 2 "" H 1650 1300 50  0001 C CNN
+F 3 "" H 1650 1300 50  0001 C CNN
+	1    1650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerCommander-rescue:LED-device D18
+U 1 1 5D2466E2
+P 4150 14050
+F 0 "D18" V 4188 13933 50  0000 R CNN
+F 1 "LED-RT" V 4097 13933 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 4150 14050 50  0001 C CNN
+F 3 "~" H 4150 14050 50  0001 C CNN
+F 4 "RND 135-00049" V 4150 14050 50  0001 C CNN "Reichelt"
+	1    4150 14050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R24
+U 1 1 5D2466E8
+P 4150 14450
+F 0 "R24" V 3943 14450 50  0000 C CNN
+F 1 "4K7" V 4034 14450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4080 14450 50  0001 C CNN
+F 3 "~" H 4150 14450 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 1100 12900 50  0001 C CNN "Reichelt"
+	1    4150 14450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 14300 4150 14200
+Wire Wire Line
+	4150 13900 4150 13750
+Wire Wire Line
+	4150 14600 4150 14700
+$Comp
+L PowerCommander-rescue:LED-device D19
+U 1 1 5D3C793F
+P 4550 14050
+F 0 "D19" V 4588 13933 50  0000 R CNN
+F 1 "LED-BL" V 4497 13933 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 4550 14050 50  0001 C CNN
+F 3 "~" H 4550 14050 50  0001 C CNN
+F 4 "RND 135-00047" H 1100 12900 50  0001 C CNN "Reichelt"
+	1    4550 14050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R25
+U 1 1 5D3C7945
+P 4550 14450
+F 0 "R25" V 4343 14450 50  0000 C CNN
+F 1 "220R" V 4434 14450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4480 14450 50  0001 C CNN
+F 3 "~" H 4550 14450 50  0001 C CNN
+F 4 "RND 1206 1 220" H 1100 12900 50  0001 C CNN "Reichelt"
+	1    4550 14450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 14300 4550 14200
+Wire Wire Line
+	4550 13900 4550 13750
+Wire Wire Line
+	4550 14600 4550 14700
+$Comp
+L power:GND #PWR02
+U 1 1 5D3EB6D9
+P 4150 14700
+F 0 "#PWR02" H 4150 14450 50  0001 C CNN
+F 1 "GND" H 4155 14527 50  0000 C CNN
+F 2 "" H 4150 14700 50  0001 C CNN
+F 3 "" H 4150 14700 50  0001 C CNN
+	1    4150 14700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5D3EB77A
+P 4550 14700
+F 0 "#PWR04" H 4550 14450 50  0001 C CNN
+F 1 "GND" H 4555 14527 50  0000 C CNN
+F 2 "" H 4550 14700 50  0001 C CNN
+F 3 "" H 4550 14700 50  0001 C CNN
+	1    4550 14700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR01
+U 1 1 5D3EB81B
+P 4150 13750
+F 0 "#PWR01" H 4150 13600 50  0001 C CNN
+F 1 "+24V" H 4165 13923 50  0000 C CNN
+F 2 "" H 4150 13750 50  0001 C CNN
+F 3 "" H 4150 13750 50  0001 C CNN
+	1    4150 13750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5D3EB8BC
+P 4550 13750
+F 0 "#PWR03" H 4550 13600 50  0001 C CNN
+F 1 "+5V" H 4565 13923 50  0000 C CNN
+F 2 "" H 4550 13750 50  0001 C CNN
+F 3 "" H 4550 13750 50  0001 C CNN
+	1    4550 13750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerCommander-rescue:Screw_Terminal_01x02-conn J12
+U 1 1 5C31F816
+P 10300 3550
+F 0 "J12" H 10220 3767 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 10220 3676 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 10300 3550 50  0001 C CNN
+F 3 "~" H 10300 3550 50  0001 C CNN
+F 4 "AKL 383-02" H -4800 1900 50  0001 C CNN "Reichelt"
+	1    10300 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L Interface_UART:MAX485E U5
+U 1 1 5C32136F
+P 9300 3450
+F 0 "U5" H 9300 4128 50  0000 C CNN
+F 1 "MAX485E" H 9300 4037 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9300 2750 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 9300 3500 50  0001 C CNN
+F 4 "SP 3078 EENL" H -4800 1900 50  0001 C CNN "Reichelt"
+	1    9300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 3350 9900 3350
+Wire Wire Line
+	9900 3350 9900 3450
+Wire Wire Line
+	9900 3450 10100 3450
+Wire Wire Line
+	10100 3550 9900 3550
+Wire Wire Line
+	9900 3550 9900 3650
+Wire Wire Line
+	9900 3650 9700 3650
+Wire Wire Line
+	8900 3450 8750 3450
+Wire Wire Line
+	8750 3550 8900 3550
+Wire Wire Line
+	8900 3650 7800 3650
+Wire Wire Line
+	8900 3350 7750 3350
+$Comp
+L power:GND #PWR0138
+U 1 1 5C409C91
+P 9300 4300
+F 0 "#PWR0138" H 9300 4050 50  0001 C CNN
+F 1 "GND" H 9305 4127 50  0000 C CNN
+F 2 "" H 9300 4300 50  0001 C CNN
+F 3 "" H 9300 4300 50  0001 C CNN
+	1    9300 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2750 9300 2850
+$Comp
+L power:+3.3V #PWR0139
+U 1 1 5C480FDA
+P 9300 2750
+F 0 "#PWR0139" H 9300 2600 50  0001 C CNN
+F 1 "+3.3V" H 9315 2923 50  0000 C CNN
+F 2 "" H 9300 2750 50  0001 C CNN
+F 3 "" H 9300 2750 50  0001 C CNN
+	1    9300 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 3350 0    50   Input ~ 0
+GPIO15
+Text GLabel 7750 3650 0    50   Input ~ 0
+GPIO14
+$Comp
+L Connector:Screw_Terminal_01x03 J13
+U 1 1 5C48558E
+P 9850 14100
+F 0 "J13" H 9769 13867 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 9930 14051 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal" H 9850 14100 50  0001 C CNN
+F 3 "~" H 9850 14100 50  0001 C CNN
+F 4 "AKL 383-03" H -5250 10850 50  0001 C CNN "Reichelt"
+	1    9850 14100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 14000 9000 14000
+Wire Wire Line
+	9650 14100 9000 14100
+Wire Wire Line
+	9650 14200 9450 14200
+Wire Wire Line
+	9450 14200 9450 14300
+$Comp
+L power:GND #PWR0140
+U 1 1 5C59CFE4
+P 9450 14300
+F 0 "#PWR0140" H 9450 14050 50  0001 C CNN
+F 1 "GND" H 9455 14127 50  0000 C CNN
+F 2 "" H 9450 14300 50  0001 C CNN
+F 3 "" H 9450 14300 50  0001 C CNN
+	1    9450 14300
+	1    0    0    -1  
+$EndComp
+Text GLabel 9000 14000 0    50   Input ~ 0
+GPIO2
+Text GLabel 9000 14100 0    50   Input ~ 0
+GPIO3
+Wire Wire Line
+	8750 3450 8750 3500
+$Comp
+L PowerCommander-rescue:BSS138-transistors Q9
+U 1 1 5C5A267D
+P 8500 3950
+F 0 "Q9" H 8705 3950 50  0000 L CNN
+F 1 "BSS138" H 8705 3905 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 8700 3875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8500 3950 50  0001 L CNN
+F 4 "BSS 138 SMD" H -4800 1900 50  0001 C CNN "Reichelt"
+	1    8500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4150 8600 4250
+Wire Wire Line
+	8600 4250 9300 4250
+Wire Wire Line
+	9300 4050 9300 4250
+Connection ~ 9300 4250
+Wire Wire Line
+	9300 4250 9300 4300
+Wire Wire Line
+	8600 3500 8750 3500
+Connection ~ 8750 3500
+Wire Wire Line
+	8750 3500 8750 3550
+Wire Wire Line
+	8600 3500 8600 3750
+Wire Wire Line
+	8600 3500 8600 3250
+Connection ~ 8600 3500
+$Comp
+L PowerCommander-rescue:R-device R27
+U 1 1 5C69A9E8
+P 8600 3100
+F 0 "R27" V 8393 3100 50  0000 C CNN
+F 1 "10K" V 8484 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8530 3100 50  0001 C CNN
+F 3 "~" H 8600 3100 50  0001 C CNN
+F 4 "RND 0805 1 10K" H -4800 1900 50  0001 C CNN "Reichelt"
+	1    8600 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8600 2950 8600 2850
+Wire Wire Line
+	8600 2850 9300 2850
+Connection ~ 9300 2850
+Wire Wire Line
+	9300 2850 9300 2950
+$Comp
+L PowerCommander-rescue:R-device R26
+U 1 1 5C7C1242
+P 8050 3950
+F 0 "R26" V 7843 3950 50  0000 C CNN
+F 1 "10K" V 7934 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7980 3950 50  0001 C CNN
+F 3 "~" H 8050 3950 50  0001 C CNN
+F 4 "RND 0805 1 10K" H -4800 1900 50  0001 C CNN "Reichelt"
+	1    8050 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 3950 8200 3950
+Wire Wire Line
+	7900 3950 7800 3950
+Wire Wire Line
+	7800 3950 7800 3650
+Connection ~ 7800 3650
+Wire Wire Line
+	7800 3650 7750 3650
+Text Label 7950 3350 0    50   ~ 0
+GPIO15
+Text Label 8000 3650 0    50   ~ 0
+GPIO14
+Text Label 9250 14100 0    50   ~ 0
+GPIO3
+Text Label 9250 14000 0    50   ~ 0
+GPIO2
+Text Label 10000 3450 0    50   ~ 0
+B
+Text Label 10000 3550 0    50   ~ 0
+A
+$Comp
+L Connector:Screw_Terminal_01x03 J14
+U 1 1 5C35F18B
+P 9650 9050
+F 0 "J14" H 9569 8817 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 9730 9001 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal" H 9650 9050 50  0001 C CNN
+F 3 "~" H 9650 9050 50  0001 C CNN
+F 4 "AKL 383-03" H -3400 5800 50  0001 C CNN "Reichelt"
+	1    9650 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 8950 9250 8950
+Wire Wire Line
+	9450 9050 8750 9050
+Wire Wire Line
+	9450 9150 9250 9150
+Wire Wire Line
+	9250 9150 9250 9250
+$Comp
+L power:GND #PWR0141
+U 1 1 5C35F195
+P 9250 9250
+F 0 "#PWR0141" H 9250 9000 50  0001 C CNN
+F 1 "GND" H 9255 9077 50  0000 C CNN
+F 2 "" H 9250 9250 50  0001 C CNN
+F 3 "" H 9250 9250 50  0001 C CNN
+	1    9250 9250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 9050 0    50   Input ~ 0
+GPIO4
+$Comp
+L power:+3.3V #PWR0142
+U 1 1 5C38C524
+P 8750 8550
+F 0 "#PWR0142" H 8750 8400 50  0001 C CNN
+F 1 "+3.3V" H 8765 8723 50  0000 C CNN
+F 2 "" H 8750 8550 50  0001 C CNN
+F 3 "" H 8750 8550 50  0001 C CNN
+	1    8750 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 8950 9250 8550
+$Comp
+L PowerCommander-rescue:R-device R28
+U 1 1 5C3E4536
+P 8750 8800
+F 0 "R28" V 8543 8800 50  0000 C CNN
+F 1 "4K7" V 8634 8800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 8680 8800 50  0001 C CNN
+F 3 "~" H 8750 8800 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H -3400 5800 50  0001 C CNN "Reichelt"
+	1    8750 8800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 8950 8750 9050
+Connection ~ 8750 9050
+Wire Wire Line
+	8750 9050 8650 9050
+Wire Wire Line
+	8750 8650 8750 8550
+$Comp
+L power:+5V #PWR0143
+U 1 1 5C4C1839
+P 9250 8550
+F 0 "#PWR0143" H 9250 8400 50  0001 C CNN
+F 1 "+5V" H 9265 8723 50  0000 C CNN
+F 2 "" H 9250 8550 50  0001 C CNN
+F 3 "" H 9250 8550 50  0001 C CNN
+	1    9250 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19800 4500 19800 4550
+$Comp
+L power:+24V #PWR0144
+U 1 1 5C79F616
+P 19900 3800
+F 0 "#PWR0144" H 19900 3650 50  0001 C CNN
+F 1 "+24V" H 19915 3973 50  0000 C CNN
+F 2 "" H 19900 3800 50  0001 C CNN
+F 3 "" H 19900 3800 50  0001 C CNN
+	1    19900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20800 4800 20800 5000
+Wire Wire Line
+	20800 5000 21050 5000
+Connection ~ 20800 4800
+Connection ~ 20850 4900
+Wire Wire Line
+	20850 4900 20750 4900
+Wire Wire Line
+	20850 5100 21050 5100
+Wire Wire Line
+	20800 5500 21050 5500
+Wire Wire Line
+	20750 5400 21050 5400
+Wire Wire Line
+	20800 5500 20800 5600
+$Comp
+L power:+24V #PWR0110
+U 1 1 5C4ADD58
+P 19900 8850
+F 0 "#PWR0110" H 19900 8700 50  0001 C CNN
+F 1 "+24V" H 19915 9023 50  0000 C CNN
+F 2 "" H 19900 8850 50  0001 C CNN
+F 3 "" H 19900 8850 50  0001 C CNN
+	1    19900 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20850 4900 20850 5100
+Wire Wire Line
+	20850 5100 20850 5200
+Wire Wire Line
+	20850 5200 21050 5200
+Connection ~ 20850 5100
+$Comp
+L Connector:Screw_Terminal_01x08 J3
+U 1 1 5C3CC928
+P 21250 5100
+F 0 "J3" H 21330 5046 50  0000 L CNN
+F 1 "Screw_Terminal_01x08" H 21330 5001 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_8-G-3.81_1x08_P3.81mm_Horizontal" H 21250 5100 50  0001 C CNN
+F 3 "~" H 21250 5100 50  0001 C CNN
+F 4 "AKL 383-08" H 11300 -1350 50  0001 C CNN "Reichelt"
+	1    21250 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21000 10050 20800 10050
+Wire Wire Line
+	21000 10450 20700 10450
+Wire Wire Line
+	20750 9950 20750 9850
+Wire Wire Line
+	20750 9950 21000 9950
+$Comp
+L power:+24V #PWR0112
+U 1 1 5C60D49E
+P 20750 9850
+F 0 "#PWR0112" H 20750 9700 50  0001 C CNN
+F 1 "+24V" H 20765 10023 50  0000 C CNN
+F 2 "" H 20750 9850 50  0001 C CNN
+F 3 "" H 20750 9850 50  0001 C CNN
+	1    20750 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0145
+U 1 1 5C60D4A4
+P 20750 10750
+F 0 "#PWR0145" H 20750 10500 50  0001 C CNN
+F 1 "GND" H 20755 10577 50  0000 C CNN
+F 2 "" H 20750 10750 50  0001 C CNN
+F 3 "" H 20750 10750 50  0001 C CNN
+	1    20750 10750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20750 9950 20750 10150
+Wire Wire Line
+	20750 10150 21000 10150
+Connection ~ 20750 9950
+Connection ~ 20800 10050
+Wire Wire Line
+	20800 10050 20700 10050
+Wire Wire Line
+	20800 10250 21000 10250
+Wire Wire Line
+	20750 10650 21000 10650
+Wire Wire Line
+	20700 10550 21000 10550
+Wire Wire Line
+	20750 10650 20750 10750
+Wire Wire Line
+	20800 10050 20800 10250
+Wire Wire Line
+	20800 10250 20800 10350
+Wire Wire Line
+	20800 10350 21000 10350
+Connection ~ 20800 10250
+$Comp
+L Connector:Screw_Terminal_01x08 J4
+U 1 1 5C60D4B7
+P 21200 10250
+F 0 "J4" H 21280 10196 50  0000 L CNN
+F 1 "Screw_Terminal_01x08" H 21280 10151 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_8-G-3.81_1x08_P3.81mm_Horizontal" H 21200 10250 50  0001 C CNN
+F 3 "~" H 21200 10250 50  0001 C CNN
+F 4 "AKL 383-08" H 12800 3800 50  0001 C CNN "Reichelt"
+	1    21200 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J15
+U 1 1 5C3D41FB
+P 16450 4250
+F 0 "J15" H 16530 4196 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 16530 4151 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 16450 4250 50  0001 C CNN
+F 3 "~" H 16450 4250 50  0001 C CNN
+F 4 "AKL 383-02" H 8750 500 50  0001 C CNN "Reichelt"
+	1    16450 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15350 4450 16050 4450
+Wire Wire Line
+	15350 4350 16250 4350
+Wire Wire Line
+	16250 4250 15750 4250
+Wire Wire Line
+	15750 4250 15750 4150
+$Comp
+L Connector:Screw_Terminal_01x02 J16
+U 1 1 5C6FF55A
+P 16450 9250
+F 0 "J16" H 16530 9196 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 16530 9151 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 16450 9250 50  0001 C CNN
+F 3 "~" H 16450 9250 50  0001 C CNN
+F 4 "AKL 383-02" H 8750 4800 50  0001 C CNN "Reichelt"
+	1    16450 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J17
+U 1 1 5C7BD91A
+P 16450 6800
+F 0 "J17" H 16530 6746 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 16530 6701 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 16450 6800 50  0001 C CNN
+F 3 "~" H 16450 6800 50  0001 C CNN
+F 4 "AKL 383-02" H 8750 4550 50  0001 C CNN "Reichelt"
+	1    16450 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J18
+U 1 1 5C7BD92D
+P 16450 11850
+F 0 "J18" H 16530 11796 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 16530 11751 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 16450 11850 50  0001 C CNN
+F 3 "~" H 16450 11850 50  0001 C CNN
+F 4 "AKL 383-02" H 8750 8900 50  0001 C CNN "Reichelt"
+	1    16450 11850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x10 J9
+U 1 1 5C844214
+P 5850 3950
+F 0 "J9" H 5930 3896 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" H 5930 3851 50  0001 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_10-G-3.81_1x10_P3.81mm_Horizontal" H 5850 3950 50  0001 C CNN
+F 3 "~" H 5850 3950 50  0001 C CNN
+F 4 "AKL 383-10 " H 400 -900 50  0001 C CNN "Reichelt"
+	1    5850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILD74 U11
+U 1 1 5D2B1B4F
+P 2550 6100
+F 0 "U11" H 2550 6425 50  0000 C CNN
+F 1 "ILD207" H 2550 6334 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2350 5900 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2550 6100 50  0001 L CNN
+F 4 "ILD 207-T VIS" H 400 -900 50  0001 C CNN "Reichelt"
+	1    2550 6100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILD74 U11
+U 2 1 5D2B1CE5
+P 2550 5500
+F 0 "U11" H 2550 5825 50  0000 C CNN
+F 1 "ILD207" H 2550 5734 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2350 5300 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2550 5500 50  0001 L CNN
+F 4 "ILD 207-T VIS" H 400 -900 50  0001 C CNN "Reichelt"
+	2    2550 5500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6000 3400 6000
+Wire Wire Line
+	4250 5400 3400 5400
+$Comp
+L PowerCommander-rescue:R-device R40
+U 1 1 5C44F032
+P 4400 5400
+F 0 "R40" V 4400 5400 50  0000 C CNN
+F 1 "2K2" V 4284 5400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 5400 50  0001 C CNN
+F 3 "~" H 4400 5400 50  0001 C CNN
+F 4 "RND 1206 1 2,2K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R42
+U 1 1 5C44F238
+P 4400 6000
+F 0 "R42" V 4400 6000 50  0000 C CNN
+F 1 "2K2" V 4284 6000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 6000 50  0001 C CNN
+F 3 "~" H 4400 6000 50  0001 C CNN
+F 4 "RND 1206 1 2,2K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R43
+U 1 1 5C5B199A
+P 4400 6350
+F 0 "R43" V 4400 6350 50  0000 C CNN
+F 1 "4K7" V 4284 6350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 6350 50  0001 C CNN
+F 3 "~" H 4400 6350 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 6350 4250 6350
+Wire Wire Line
+	3000 6350 2900 6350
+Wire Wire Line
+	4550 6000 4650 6000
+Wire Wire Line
+	4650 6350 4550 6350
+Wire Wire Line
+	2900 6500 2900 6350
+Connection ~ 2900 6200
+Wire Wire Line
+	2900 6200 2850 6200
+$Comp
+L PowerCommander-rescue:LED-device D24
+U 1 1 5C693960
+P 3150 5750
+F 0 "D24" H 3400 5700 50  0000 R CNN
+F 1 "LED-GR" V 3097 5633 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 3150 5750 50  0001 C CNN
+F 3 "~" H 3150 5750 50  0001 C CNN
+F 4 "LG L29K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R41
+U 1 1 5C693966
+P 4400 5750
+F 0 "R41" V 4400 5750 50  0000 C CNN
+F 1 "4K7" V 4284 5750 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 5750 50  0001 C CNN
+F 3 "~" H 4400 5750 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 5750 4250 5750
+Wire Wire Line
+	4650 5750 4550 5750
+Wire Wire Line
+	4550 5400 4650 5400
+Wire Wire Line
+	2850 5600 2900 5600
+Wire Wire Line
+	2900 6200 2900 5750
+Connection ~ 2900 5600
+Wire Wire Line
+	2900 5750 3000 5750
+$Comp
+L PowerCommander-rescue:LED-device D23
+U 1 1 5C7AFB35
+P 3150 5150
+F 0 "D23" V 3188 5033 50  0000 R CNN
+F 1 "LED-GR" V 3097 5033 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 3150 5150 50  0001 C CNN
+F 3 "~" H 3150 5150 50  0001 C CNN
+F 4 "LG L29K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILD74 U4
+U 1 1 5C7AFB3B
+P 2550 4900
+F 0 "U4" H 2550 5225 50  0000 C CNN
+F 1 "ILD207" H 2550 5134 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2350 4700 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2550 4900 50  0001 L CNN
+F 4 "ILD 207-T VIS" H 400 -900 50  0001 C CNN "Reichelt"
+	1    2550 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILD74 U4
+U 2 1 5C7AFB41
+P 2550 4300
+F 0 "U4" H 2550 4625 50  0000 C CNN
+F 1 "ILD207" H 2550 4534 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2350 4100 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2550 4300 50  0001 L CNN
+F 4 "ILD 207-T VIS" H 400 -900 50  0001 C CNN "Reichelt"
+	2    2550 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4800 3400 4800
+Wire Wire Line
+	4250 4200 3400 4200
+$Comp
+L PowerCommander-rescue:R-device R36
+U 1 1 5C7AFB49
+P 4400 4200
+F 0 "R36" V 4400 4200 50  0000 C CNN
+F 1 "2K2" V 4284 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 4200 50  0001 C CNN
+F 3 "~" H 4400 4200 50  0001 C CNN
+F 4 "RND 1206 1 2,2K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R38
+U 1 1 5C7AFB4F
+P 4400 4800
+F 0 "R38" V 4400 4800 50  0000 C CNN
+F 1 "2K2" V 4284 4800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 4800 50  0001 C CNN
+F 3 "~" H 4400 4800 50  0001 C CNN
+F 4 "RND 1206 1 2,2K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R39
+U 1 1 5C7AFB55
+P 4400 5150
+F 0 "R39" V 4400 5150 50  0000 C CNN
+F 1 "4K7" V 4284 5150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 5150 50  0001 C CNN
+F 3 "~" H 4400 5150 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 5150 4250 5150
+Wire Wire Line
+	3000 5150 2900 5150
+Wire Wire Line
+	4550 4800 4650 4800
+Wire Wire Line
+	4650 5150 4550 5150
+Wire Wire Line
+	2900 5600 2900 5150
+Connection ~ 2900 5000
+Wire Wire Line
+	2900 5000 2850 5000
+$Comp
+L PowerCommander-rescue:LED-device D22
+U 1 1 5C7AFB63
+P 3150 4550
+F 0 "D22" V 3188 4433 50  0000 R CNN
+F 1 "LED-GR" V 3097 4433 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 3150 4550 50  0001 C CNN
+F 3 "~" H 3150 4550 50  0001 C CNN
+F 4 "LG L29K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R37
+U 1 1 5C7AFB69
+P 4400 4550
+F 0 "R37" V 4400 4550 50  0000 C CNN
+F 1 "4K7" V 4284 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 4550 50  0001 C CNN
+F 3 "~" H 4400 4550 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 4550 4250 4550
+Wire Wire Line
+	4650 4550 4550 4550
+Wire Wire Line
+	4550 4200 4650 4200
+Wire Wire Line
+	2850 4400 2900 4400
+Wire Wire Line
+	2900 5000 2900 4550
+Connection ~ 2900 4400
+Wire Wire Line
+	2900 4550 3000 4550
+$Comp
+L PowerCommander-rescue:LED-device D21
+U 1 1 5C81836E
+P 3150 3950
+F 0 "D21" V 3188 3833 50  0000 R CNN
+F 1 "LED-GR" V 3097 3833 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 3150 3950 50  0001 C CNN
+F 3 "~" H 3150 3950 50  0001 C CNN
+F 4 "LG L29K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILD74 U3
+U 1 1 5C818374
+P 2550 3700
+F 0 "U3" H 2550 4025 50  0000 C CNN
+F 1 "ILD207" H 2550 3934 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2350 3500 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2550 3700 50  0001 L CNN
+F 4 "ILD 207-T VIS" H 400 -900 50  0001 C CNN "Reichelt"
+	1    2550 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILD74 U3
+U 2 1 5C81837A
+P 2550 3100
+F 0 "U3" H 2550 3425 50  0000 C CNN
+F 1 "ILD207" H 2550 3334 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2350 2900 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2550 3100 50  0001 L CNN
+F 4 "ILD 207-T VIS" H 400 -900 50  0001 C CNN "Reichelt"
+	2    2550 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3000 3400 3000
+$Comp
+L PowerCommander-rescue:R-device R32
+U 1 1 5C818382
+P 4400 3000
+F 0 "R32" V 4400 3000 50  0000 C CNN
+F 1 "2K2" V 4284 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 3000 50  0001 C CNN
+F 3 "~" H 4400 3000 50  0001 C CNN
+F 4 "RND 1206 1 2,2K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R34
+U 1 1 5C818388
+P 4400 3600
+F 0 "R34" V 4400 3600 50  0000 C CNN
+F 1 "2K2" V 4284 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 3600 50  0001 C CNN
+F 3 "~" H 4400 3600 50  0001 C CNN
+F 4 "RND 1206 1 2,2K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R35
+U 1 1 5C81838E
+P 4400 3950
+F 0 "R35" V 4400 3950 50  0000 C CNN
+F 1 "4K7" V 4284 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 3950 50  0001 C CNN
+F 3 "~" H 4400 3950 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3950 4250 3950
+Wire Wire Line
+	3000 4400 2900 4400
+Wire Wire Line
+	4550 3600 4650 3600
+Wire Wire Line
+	4650 3950 4550 3950
+Wire Wire Line
+	2900 4400 2900 3950
+Connection ~ 2900 3800
+Wire Wire Line
+	2900 3800 2850 3800
+$Comp
+L PowerCommander-rescue:LED-device D20
+U 1 1 5C81839C
+P 3150 3350
+F 0 "D20" V 3188 3233 50  0000 R CNN
+F 1 "LED-GR" V 3097 3233 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 3150 3350 50  0001 C CNN
+F 3 "~" H 3150 3350 50  0001 C CNN
+F 4 "LG L29K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R33
+U 1 1 5C8183A2
+P 4400 3350
+F 0 "R33" V 4400 3350 50  0000 C CNN
+F 1 "4K7" V 4284 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 3350 50  0001 C CNN
+F 3 "~" H 4400 3350 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3350 4250 3350
+Wire Wire Line
+	4650 3350 4550 3350
+Wire Wire Line
+	4550 3000 4650 3000
+Wire Wire Line
+	2850 3200 2900 3200
+Connection ~ 2900 3200
+$Comp
+L PowerCommander-rescue:LED-device D16
+U 1 1 5C85142C
+P 3150 2750
+F 0 "D16" V 3188 2633 50  0000 R CNN
+F 1 "LED-GR" V 3097 2633 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 3150 2750 50  0001 C CNN
+F 3 "~" H 3150 2750 50  0001 C CNN
+F 4 "LG L29K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILD74 U2
+U 1 1 5C851432
+P 2550 2500
+F 0 "U2" H 2550 2825 50  0000 C CNN
+F 1 "ILD207" H 2550 2734 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2350 2300 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2550 2500 50  0001 L CNN
+F 4 "ILD 207-T VIS" H 400 -900 50  0001 C CNN "Reichelt"
+	1    2550 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILD74 U2
+U 2 1 5C851438
+P 2550 1900
+F 0 "U2" H 2550 2225 50  0000 C CNN
+F 1 "ILD207" H 2550 2134 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2350 1700 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2550 1900 50  0001 L CNN
+F 4 "ILD 207-T VIS" H 400 -900 50  0001 C CNN "Reichelt"
+	2    2550 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2400 3400 2400
+Wire Wire Line
+	4250 1800 3400 1800
+$Comp
+L PowerCommander-rescue:R-device R23
+U 1 1 5C851440
+P 4400 1800
+F 0 "R23" V 4400 1800 50  0000 C CNN
+F 1 "2K2" V 4284 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 1800 50  0001 C CNN
+F 3 "~" H 4400 1800 50  0001 C CNN
+F 4 "RND 1206 1 2,2K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R30
+U 1 1 5C851446
+P 4400 2400
+F 0 "R30" V 4400 2400 50  0000 C CNN
+F 1 "2K2" V 4284 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 2400 50  0001 C CNN
+F 3 "~" H 4400 2400 50  0001 C CNN
+F 4 "RND 1206 1 2,2K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R31
+U 1 1 5C85144C
+P 4400 2750
+F 0 "R31" V 4400 2750 50  0000 C CNN
+F 1 "4K7" V 4284 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 2750 50  0001 C CNN
+F 3 "~" H 4400 2750 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2750 4250 2750
+Wire Wire Line
+	3000 2750 2900 2750
+Wire Wire Line
+	4550 2400 4650 2400
+Wire Wire Line
+	4650 2750 4550 2750
+Connection ~ 2900 2600
+Wire Wire Line
+	2900 2600 2850 2600
+$Comp
+L PowerCommander-rescue:LED-device D15
+U 1 1 5C85145A
+P 3150 2150
+F 0 "D15" V 3188 2033 50  0000 R CNN
+F 1 "LED-GR" V 3097 2033 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 3150 2150 50  0001 C CNN
+F 3 "~" H 3150 2150 50  0001 C CNN
+F 4 "LG L29K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PowerCommander-rescue:R-device R29
+U 1 1 5C851460
+P 4400 2150
+F 0 "R29" V 4400 2150 50  0000 C CNN
+F 1 "4K7" V 4284 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4330 2150 50  0001 C CNN
+F 3 "~" H 4400 2150 50  0001 C CNN
+F 4 "RND 1206 1 4,7K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    4400 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2150 4250 2150
+Wire Wire Line
+	4650 2150 4550 2150
+Wire Wire Line
+	4550 1800 4650 1800
+Wire Wire Line
+	2850 2000 2900 2000
+Wire Wire Line
+	2900 2150 3000 2150
+Wire Wire Line
+	4650 4200 4850 4200
+Wire Wire Line
+	4850 4200 4850 4050
+Wire Wire Line
+	4850 4050 5650 4050
+Connection ~ 4650 4200
+Wire Wire Line
+	4650 3600 4850 3600
+Wire Wire Line
+	4850 3600 4850 3950
+Wire Wire Line
+	4850 3950 5650 3950
+Connection ~ 4650 3600
+Wire Wire Line
+	4650 3600 4650 3950
+Wire Wire Line
+	4650 3000 4950 3000
+Wire Wire Line
+	4950 3000 4950 3850
+Wire Wire Line
+	4950 3850 5650 3850
+Connection ~ 4650 3000
+Wire Wire Line
+	4650 3000 4650 3350
+Wire Wire Line
+	5050 2400 5050 3750
+Wire Wire Line
+	5050 3750 5650 3750
+Wire Wire Line
+	4650 2400 5050 2400
+Connection ~ 4650 2400
+Wire Wire Line
+	4650 1800 5150 1800
+Wire Wire Line
+	5150 1800 5150 3650
+Wire Wire Line
+	5150 3650 5650 3650
+Connection ~ 4650 1800
+Wire Wire Line
+	4650 4800 4950 4800
+Wire Wire Line
+	4950 4800 4950 4150
+Wire Wire Line
+	4950 4150 5650 4150
+Connection ~ 4650 4800
+Wire Wire Line
+	4650 5400 5050 5400
+Wire Wire Line
+	5050 5400 5050 4250
+Wire Wire Line
+	5050 4250 5650 4250
+Connection ~ 4650 5400
+Wire Wire Line
+	4650 6000 5150 6000
+Wire Wire Line
+	5150 6000 5150 4350
+Wire Wire Line
+	5150 4350 5650 4350
+Connection ~ 4650 6000
+$Comp
+L PowerCommander-rescue:R-device R15
+U 1 1 5CBD61AB
+P 1900 1650
+F 0 "R15" V 1900 1650 50  0000 C CNN
+F 1 "10K" V 1784 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1830 1650 50  0001 C CNN
+F 3 "~" H 1900 1650 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    1900 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 1800 2150 1800
+Wire Wire Line
+	2050 1650 2150 1650
+Wire Wire Line
+	2150 1650 2150 1800
+Connection ~ 2150 1800
+Wire Wire Line
+	2150 1800 1300 1800
+Wire Wire Line
+	1750 1650 1650 1650
+Wire Wire Line
+	1650 1650 1650 1300
+$Comp
+L PowerCommander-rescue:R-device R16
+U 1 1 5CD9CE66
+P 1900 2250
+F 0 "R16" V 1900 2250 50  0000 C CNN
+F 1 "10K" V 1784 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1830 2250 50  0001 C CNN
+F 3 "~" H 1900 2250 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    1900 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2400 2150 2400
+Wire Wire Line
+	2050 2250 2150 2250
+Wire Wire Line
+	2150 2250 2150 2400
+Connection ~ 2150 2400
+Wire Wire Line
+	2150 2400 1300 2400
+Wire Wire Line
+	1750 2250 1650 2250
+Wire Wire Line
+	1650 2250 1650 1650
+Connection ~ 1650 1650
+$Comp
+L PowerCommander-rescue:R-device R17
+U 1 1 5CE23C81
+P 1900 2850
+F 0 "R17" V 1900 2850 50  0000 C CNN
+F 1 "10K" V 1784 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1830 2850 50  0001 C CNN
+F 3 "~" H 1900 2850 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    1900 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 3000 2150 3000
+Wire Wire Line
+	2050 2850 2150 2850
+Wire Wire Line
+	2150 2850 2150 3000
+Connection ~ 2150 3000
+Wire Wire Line
+	2150 3000 1300 3000
+Wire Wire Line
+	1750 2850 1650 2850
+Wire Wire Line
+	1650 2850 1650 2250
+Connection ~ 1650 2250
+$Comp
+L PowerCommander-rescue:R-device R18
+U 1 1 5CE69967
+P 1900 3450
+F 0 "R18" V 1900 3450 50  0000 C CNN
+F 1 "10K" V 1784 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1830 3450 50  0001 C CNN
+F 3 "~" H 1900 3450 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    1900 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 3600 2150 3600
+Wire Wire Line
+	2050 3450 2150 3450
+Wire Wire Line
+	2150 3450 2150 3600
+Connection ~ 2150 3600
+Wire Wire Line
+	2150 3600 1300 3600
+Wire Wire Line
+	1750 3450 1650 3450
+Wire Wire Line
+	1650 3450 1650 2850
+Connection ~ 1650 2850
+$Comp
+L PowerCommander-rescue:R-device R19
+U 1 1 5CEB1163
+P 1900 4050
+F 0 "R19" V 1900 4050 50  0000 C CNN
+F 1 "10K" V 1784 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1830 4050 50  0001 C CNN
+F 3 "~" H 1900 4050 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    1900 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 4200 2150 4200
+Wire Wire Line
+	2050 4050 2150 4050
+Wire Wire Line
+	2150 4050 2150 4200
+Connection ~ 2150 4200
+Wire Wire Line
+	2150 4200 1300 4200
+Wire Wire Line
+	1750 4050 1650 4050
+Wire Wire Line
+	1650 4050 1650 3450
+Connection ~ 1650 3450
+$Comp
+L PowerCommander-rescue:R-device R20
+U 1 1 5CEFAC5D
+P 1900 4650
+F 0 "R20" V 1900 4650 50  0000 C CNN
+F 1 "10K" V 1784 4650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1830 4650 50  0001 C CNN
+F 3 "~" H 1900 4650 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    1900 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 4800 2150 4800
+Wire Wire Line
+	2050 4650 2150 4650
+Wire Wire Line
+	2150 4650 2150 4800
+Connection ~ 2150 4800
+Wire Wire Line
+	2150 4800 1300 4800
+Wire Wire Line
+	1750 4650 1650 4650
+Wire Wire Line
+	1650 4650 1650 4050
+Connection ~ 1650 4050
+$Comp
+L PowerCommander-rescue:R-device R21
+U 1 1 5CF46A9F
+P 1900 5250
+F 0 "R21" V 1900 5250 50  0000 C CNN
+F 1 "10K" V 1784 5250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1830 5250 50  0001 C CNN
+F 3 "~" H 1900 5250 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    1900 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 5400 2150 5400
+Wire Wire Line
+	2050 5250 2150 5250
+Wire Wire Line
+	2150 5250 2150 5400
+Connection ~ 2150 5400
+Wire Wire Line
+	2150 5400 1300 5400
+Wire Wire Line
+	1750 5250 1650 5250
+Wire Wire Line
+	1650 5250 1650 4650
+Connection ~ 1650 4650
+$Comp
+L PowerCommander-rescue:R-device R22
+U 1 1 5CF93DDD
+P 1900 5850
+F 0 "R22" V 1900 5850 50  0000 C CNN
+F 1 "10K" V 1784 5850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1830 5850 50  0001 C CNN
+F 3 "~" H 1900 5850 50  0001 C CNN
+F 4 "RND 0805 1 10K" H 400 -900 50  0001 C CNN "Reichelt"
+	1    1900 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 6000 2150 6000
+Wire Wire Line
+	2050 5850 2150 5850
+Wire Wire Line
+	2150 5850 2150 6000
+Connection ~ 2150 6000
+Wire Wire Line
+	2150 6000 1300 6000
+Wire Wire Line
+	1750 5850 1650 5850
+Wire Wire Line
+	1650 5850 1650 5250
+Connection ~ 1650 5250
+Wire Wire Line
+	2250 6200 1550 6200
+Wire Wire Line
+	1550 2000 2250 2000
+Wire Wire Line
+	2250 2600 1550 2600
+Connection ~ 1550 2600
+Wire Wire Line
+	1550 2600 1550 2000
+Wire Wire Line
+	2250 3200 1550 3200
+Connection ~ 1550 3200
+Wire Wire Line
+	1550 3200 1550 2600
+Wire Wire Line
+	2250 3800 1550 3800
+Connection ~ 1550 3800
+Wire Wire Line
+	1550 3800 1550 3200
+Wire Wire Line
+	2250 4400 1550 4400
+Connection ~ 1550 4400
+Wire Wire Line
+	1550 4400 1550 3800
+Wire Wire Line
+	2250 5000 1550 5000
+Connection ~ 1550 5000
+Wire Wire Line
+	1550 5000 1550 4400
+Wire Wire Line
+	2250 5600 1550 5600
+Wire Wire Line
+	1550 5000 1550 5600
+Connection ~ 1550 5600
+Wire Wire Line
+	1550 5600 1550 6200
+Wire Wire Line
+	1550 6200 1550 6500
+Connection ~ 1550 6200
+Wire Wire Line
+	2900 2600 2900 2150
+$Comp
+L Jumper:Jumper_3_Bridged12 JP1
+U 1 1 5D441336
+P 15750 4000
+F 0 "JP1" H 15750 4112 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 15750 4113 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 15750 4000 50  0001 C CNN
+F 3 "~" H 15750 4000 50  0001 C CNN
+	1    15750 4000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16050 4000 16000 4000
+Wire Wire Line
+	16050 4000 16050 4450
+Wire Wire Line
+	15450 4000 15500 4000
+Wire Wire Line
+	15450 4000 15450 4250
+Wire Wire Line
+	15350 9250 15450 9250
+Wire Wire Line
+	15350 9450 16050 9450
+Wire Wire Line
+	15350 9350 16250 9350
+Wire Wire Line
+	16250 9250 15750 9250
+Wire Wire Line
+	15750 9250 15750 9150
+$Comp
+L Jumper:Jumper_3_Bridged12 JP2
+U 1 1 5D7953E0
+P 15750 9000
+F 0 "JP2" H 15750 9112 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 15750 9113 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 15750 9000 50  0001 C CNN
+F 3 "~" H 15750 9000 50  0001 C CNN
+	1    15750 9000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16050 9000 16000 9000
+Wire Wire Line
+	16050 9000 16050 9450
+Wire Wire Line
+	15450 9000 15500 9000
+Wire Wire Line
+	15450 9000 15450 9250
+Wire Wire Line
+	15350 6800 15450 6800
+Wire Wire Line
+	15350 7000 16050 7000
+Wire Wire Line
+	15350 6900 16250 6900
+Wire Wire Line
+	16250 6800 15750 6800
+Wire Wire Line
+	15750 6800 15750 6700
+$Comp
+L Jumper:Jumper_3_Bridged12 JP3
+U 1 1 5D892B4D
+P 15750 6550
+F 0 "JP3" H 15750 6662 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 15750 6663 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 15750 6550 50  0001 C CNN
+F 3 "~" H 15750 6550 50  0001 C CNN
+	1    15750 6550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16050 6550 16000 6550
+Wire Wire Line
+	16050 6550 16050 7000
+Wire Wire Line
+	15450 6550 15500 6550
+Wire Wire Line
+	15450 6550 15450 6800
+Wire Wire Line
+	15350 11850 15450 11850
+Wire Wire Line
+	15350 12050 16050 12050
+Wire Wire Line
+	15350 11950 16250 11950
+Wire Wire Line
+	16250 11850 15750 11850
+Wire Wire Line
+	15750 11850 15750 11750
+$Comp
+L Jumper:Jumper_3_Bridged12 JP4
+U 1 1 5D892B5C
+P 15750 11600
+F 0 "JP4" H 15750 11712 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 15750 11713 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 15750 11600 50  0001 C CNN
+F 3 "~" H 15750 11600 50  0001 C CNN
+	1    15750 11600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16050 11600 16000 11600
+Wire Wire Line
+	16050 11600 16050 12050
+Wire Wire Line
+	15450 11600 15500 11600
+Wire Wire Line
+	15450 11600 15450 11850
+Text GLabel 1300 6000 0    50   Input ~ 0
+GPIO24
+Text GLabel 1300 5400 0    50   Input ~ 0
+GPIO10
+Text GLabel 1300 4800 0    50   Input ~ 0
+GPIO25
+Text GLabel 1300 4200 0    50   Input ~ 0
+GPIO9
+Text GLabel 1300 1800 0    50   Input ~ 0
+GPIO5
+$Comp
+L Diode:1N4148 D27
+U 1 1 5C4F867E
+P 3150 3200
+F 0 "D27" H 3150 2984 50  0000 C CNN
+F 1 "1N4148W" H 3150 3075 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3150 3025 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3150 3200 50  0001 C CNN
+F 4 "RND 1N4148W" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 3200 3000 3200
+Wire Wire Line
+	2900 3200 2900 2750
+Wire Wire Line
+	3300 3200 3400 3200
+Wire Wire Line
+	3400 3200 3400 3000
+Connection ~ 3400 3000
+Wire Wire Line
+	3400 3000 2850 3000
+Connection ~ 2900 3350
+Wire Wire Line
+	2900 3350 2900 3200
+Wire Wire Line
+	2900 3350 3000 3350
+Wire Wire Line
+	2900 3350 2900 3800
+$Comp
+L Diode:1N4148 D29
+U 1 1 5CA7C815
+P 3150 4400
+F 0 "D29" H 3150 4184 50  0000 C CNN
+F 1 "1N4148W" H 3150 4275 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3150 4225 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3150 4400 50  0001 C CNN
+F 4 "RND 1N4148W" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 3950 2900 3950
+Connection ~ 2900 3950
+Wire Wire Line
+	2900 3950 2900 3800
+Wire Wire Line
+	3300 4400 3400 4400
+Wire Wire Line
+	3400 4400 3400 4200
+Connection ~ 2900 4550
+Wire Wire Line
+	2900 4550 2900 4400
+Connection ~ 2900 5150
+Wire Wire Line
+	2900 5150 2900 5000
+Connection ~ 2900 5750
+Wire Wire Line
+	2900 5750 2900 5600
+Connection ~ 2900 6350
+Wire Wire Line
+	2900 6350 2900 6200
+Connection ~ 2900 2750
+Wire Wire Line
+	2900 2750 2900 2600
+Connection ~ 2900 2150
+Wire Wire Line
+	2900 2150 2900 2000
+Wire Wire Line
+	4650 1800 4650 2150
+Wire Wire Line
+	4650 2400 4650 2750
+Wire Wire Line
+	4650 4200 4650 4550
+Wire Wire Line
+	4650 4800 4650 5150
+Wire Wire Line
+	4650 6000 4650 6350
+Wire Wire Line
+	4650 5400 4650 5750
+Connection ~ 3400 4200
+Wire Wire Line
+	3400 4200 2850 4200
+Wire Wire Line
+	2850 3600 3400 3600
+Wire Wire Line
+	3000 3800 2900 3800
+$Comp
+L Diode:1N4148 D28
+U 1 1 5D038530
+P 3150 3800
+F 0 "D28" H 3150 3584 50  0000 C CNN
+F 1 "1N4148W" H 3150 3675 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3150 3625 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3150 3800 50  0001 C CNN
+F 4 "RND 1N4148W" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 3800 3400 3800
+Wire Wire Line
+	3400 3800 3400 3600
+Connection ~ 3400 3600
+Wire Wire Line
+	3400 3600 4250 3600
+Wire Wire Line
+	3000 2600 2900 2600
+$Comp
+L Diode:1N4148 D26
+U 1 1 5D09639E
+P 3150 2600
+F 0 "D26" H 3150 2384 50  0000 C CNN
+F 1 "1N4148W" H 3150 2475 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3150 2425 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3150 2600 50  0001 C CNN
+F 4 "RND 1N4148W" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 2600 3400 2600
+Wire Wire Line
+	3400 2600 3400 2400
+Connection ~ 3400 2400
+Wire Wire Line
+	3400 2400 4250 2400
+Wire Wire Line
+	3000 2000 2900 2000
+$Comp
+L Diode:1N4148 D25
+U 1 1 5D0F59EE
+P 3150 2000
+F 0 "D25" H 3150 1784 50  0000 C CNN
+F 1 "1N4148W" H 3150 1875 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3150 1825 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3150 2000 50  0001 C CNN
+F 4 "RND 1N4148W" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 2000 3400 2000
+Wire Wire Line
+	3400 2000 3400 1800
+Connection ~ 2900 2000
+Connection ~ 3400 1800
+Wire Wire Line
+	3400 1800 2850 1800
+Wire Wire Line
+	3000 5000 2900 5000
+$Comp
+L Diode:1N4148 D30
+U 1 1 5D1565A1
+P 3150 5000
+F 0 "D30" H 3150 4784 50  0000 C CNN
+F 1 "1N4148W" H 3150 4875 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3150 4825 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3150 5000 50  0001 C CNN
+F 4 "RND 1N4148W" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 5000 3400 5000
+Wire Wire Line
+	3400 5000 3400 4800
+Connection ~ 3400 4800
+Wire Wire Line
+	3400 4800 4250 4800
+Wire Wire Line
+	3000 5600 2900 5600
+$Comp
+L Diode:1N4148 D31
+U 1 1 5D1B7C2E
+P 3150 5600
+F 0 "D31" H 3150 5384 50  0000 C CNN
+F 1 "1N4148W" H 3150 5475 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3150 5425 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3150 5600 50  0001 C CNN
+F 4 "RND 1N4148W" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 5600 3400 5600
+Wire Wire Line
+	3400 5600 3400 5400
+Connection ~ 3400 5400
+Wire Wire Line
+	3400 5400 2850 5400
+Wire Wire Line
+	3000 6200 2900 6200
+$Comp
+L Diode:1N4148 D32
+U 1 1 5D21A9F6
+P 3150 6200
+F 0 "D32" H 3000 6250 50  0000 C CNN
+F 1 "1N4148W" H 3150 6075 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3150 6025 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3150 6200 50  0001 C CNN
+F 4 "RND 1N4148W" H 400 -900 50  0001 C CNN "Reichelt"
+	1    3150 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 6200 3400 6200
+Wire Wire Line
+	3400 6200 3400 6000
+Connection ~ 3400 6000
+Wire Wire Line
+	3400 6000 4250 6000
+Wire Notes Line
+	6700 550  6700 15950
+Wire Notes Line
+	6700 6850 550  6850
+Wire Notes Line
+	6750 6850 11700 6850
+Wire Notes Line
+	500  12200 11650 12200
+Wire Notes Line
+	11650 500  11650 16000
+Wire Notes Line
+	17350 500  17350 16000
+Wire Notes Line
+	17350 16000 17300 16000
+Text Notes 18850 1700 0    157  ~ 0
+2x Selbsthaltung
+Text Notes 13250 1800 0    157  ~ 0
+4x Relais Ausgang
+Text Notes 8850 1800 0    157  ~ 0
+RS485
+Text Notes 8600 7400 0    157  ~ 0
+1-Wire\n
+Text Notes 9050 12850 0    157  ~ 0
+I2C\n
+Text Notes 1550 12850 0    157  ~ 0
+24VDC Spannungsversorgung\n24VDC / 5VDC Wandler
+Text Notes 1400 7200 0    157  ~ 0
+RaspberryPi 3B+ Header + Breakout
+Text Notes 1300 850  0    157  ~ 0
+8x Digital Eingang 24VDC tolerant
+$EndSCHEMATC
