@@ -10,7 +10,7 @@ issue_report_channels:
 state:
   entity_id: binary_sensor.space_open
 sensors:
-  temperature:
+  temperature: 
     - sensor.sofa_temperature
     - sensor.zuluft_temperature
   people_now_present:

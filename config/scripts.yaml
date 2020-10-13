@@ -1,29 +1,23 @@
 innenlicht:
   alias: Innenlicht
   sequence:
-  - alias: INNENLICHT_ON
-    service: homeassistant.turn_on
-    data:
-      entity_id: switch.relay_2
-  - delay:
-      milliseconds: 200
-  - alias: INNENLICHT_ON
-    service: homeassistant.turn_off
-    data:
-      entity_id: switch.relay_2
+  - service: switch.turn_on
+    entity_id: switch.relay_2
+  - delay: '0.2'
+  - service: switch.turn_off
+    entity_id: switch.relay_2
+  mode: single
 aussenlicht:
   alias: Aussenlicht
   sequence:
-  - alias: AUSSENLICHT_ON
-    service: homeassistant.turn_on
-    data:
-      entity_id: switch.relay_1
-  - delay:
-      milliseconds: 200
-  - alias: AUSSENLICHT_ON
-    service: homeassistant.turn_off
-    data:
-      entity_id: switch.relay_1
+  - delay: '{{ states(''input_number.turn_off_delay_outdoor_light'') if is_state(''binary_sensor.input_4'',
+      ''on'') else 0 }}'
+  - service: switch.turn_on
+    entity_id: switch.relay_1
+  - delay: '0.2'
+  - service: switch.turn_off
+    entity_id: switch.relay_1
+  mode: single
 toggle_circuit_1:
   alias: Toggle Circuit 1
   sequence:
@@ -35,6 +29,7 @@ toggle_circuit_1:
   - data: {}
     entity_id: switch.relay_circuit_1_off,switch.relay_circuit_1_on
     service: switch.turn_off
+  mode: single
 toggle_circuit_2:
   alias: Toggle Circuit 2
   sequence:
@@ -69,8 +64,21 @@ ventilation_speed_2:
 ventilation_off:
   alias: Ventilation Off
   sequence:
+  - service: switch.turn_off
+    data: {}
+    entity_id: switch.relay_3, switch.relay_4
+  mode: single
+trash_announcement:
+  alias: TrashAnnouncement
+  sequence:
   - data: {}
-    entity_id:
-    - switch.relay_4
-    - switch.relay_3
-    service: switch.turn_off
+    entity_id: media_player.mpd
+    service: media_player.media_pause
+  - delay: 00:00:02
+  - data:
+      text: Morgen ist Müllabfuhr
+    service: rest_command.voiceapi
+  - delay: 00:00:02
+  - data: {}
+    entity_id: media_player.mpd
+    service: media_player.media_play

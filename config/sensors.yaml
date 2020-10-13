@@ -1,15 +1,35 @@
+
+# Monitoring of the hosting RaspberryPi 3B+
 - platform: systemmonitor
   resources:
-      - type: memory_free
-      - type: ipv4_address
-      - type: processor_use
-      - type: last_boot
+    - type: memory_free
+    - type: ipv4_address
+      arg: eth0
+    - type: ipv4_address
+      arg: wlan0
+    - type: processor_use
+    - type: disk_free
+    - type: last_boot
+
+# read CPU temperature from /proc (mount host proc path into docker container to make it available)
+- platform: command_line
+  name: CPU Temperature
+  command: "cat /sys/class/thermal/thermal_zone0/temp"
+  unit_of_measurement: "°C"
+  value_template: '{{ value | multiply(0.001) | round(1) }}'
+
+
+
+# Home Assistant Version 
+- platform: command_line
+  name: Current Version
+  command: "/usr/local/bin/hass --version"
 
 - platform: onewire
   names:
     28-0000062762df: Sofa
     28-000006288e90: Zuluft
-    
+
 - platform: time_date
   display_options:
     - 'time'
@@ -30,4 +50,23 @@
         {% endfor %}
         {{ ns.count }}
 
+- platform: local_luftdaten
+  host: 192.168.23.120
+  name: Feinstaubsensor
+  monitored_conditions:
+    - SDS_P1
+    - SDS_P2
+    - temperature
+    - humidity
+    - signal
 
+- platform: abfallplus
+  name: Restmüll
+  key: 5b0384147b5bc055c30fee1fb6db6f76
+  municipality: 278
+  district: 2599,2601
+  street: 15645
+  trash_ids: "51, 17, 48, 31, 43, 20, 321"
+  pattern: Restmüll
+
+- platform: corona_landkreis_waldshut

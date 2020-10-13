@@ -5,6 +5,7 @@ services:
     container_name: home-assistant
     image: homeassistant/home-assistant:stable
     volumes:
+      - /sys/class/thermal/thermal_zone0/temp:/sys/class/thermal/thermal_zone0/temp
       - ./home-assistant/config:/config
       - /data:/data
     environment:

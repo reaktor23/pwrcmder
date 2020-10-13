@@ -17,25 +17,51 @@ homeassistant:
 logger:
   default: warning
   logs:
-    homeassistant.components.mikrotik: warning
+    homeassistant.components.mikrotik: warning 
+    custom_components.abfallplus: warning
+    custom_components.components.rest_command: debug
 
 # Enables the frontend
 frontend:
 
+# Enables configuration UI
 config:
 
 api:
 
-updater:
+influxdb:
+  host: 192.168.23.11
+  include:
+    entities:
+      - sensor.member_count
+      - sensor.zuluft_temperature
+      - sensor.sofa_temperature
+      - binary_sensor.input_1
+      - binary_sensor.input_2
+      - binary_sensor.input_3
+      - binary_sensor.input_4
+      - switch.relay_4
+      - switch.relay_3
+      
 
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
 discovery:
 
+# Enables support for tracking state changes over time
 history:
 
 recorder:
-  purge_keep_days: 5
-  #db_url: sqlite:////data/home-assistant/database
-  db_url: postgresql://hass:pw@actse/hass
+  #purge_keep_days: 5
+  db_url: !secret db_url # database lives on actse
   exclude:
     domains:
       - automation
@@ -45,29 +71,29 @@ recorder:
       - sensor.last_boot # Comes from 'systemmonitor' sensor platform
       - sensor.date
 
-influxdb:
-  host: actse
-  
+# input helpers
+input_boolean:
+input_number:
+input_datetime:
+input_text:
+input_select:
+
 person:
 
+# Allow diagnosing system problems
 system_health:
 
 spaceapi: !include spaceapi.yaml
 
-device_tracker:
-
-mikrotik:
-  - name: Mikrotik
-    host: 192.168.23.1
-    username: !secret mikrotik_username
-    password: !secret mikrotik_password
-
+device_tracker: 
+        
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 sensor: !include sensors.yaml
 binary_sensor: !include binary_sensors.yaml
 switch: !include switches.yaml
+rest_command: !include rest_commands.yaml
 
 matrix:
   homeserver: https://matrix.reaktor23.org
@@ -79,3 +105,10 @@ matrix:
 media_player:
   - platform: mpd
     host: actse
+
+maxcube:
+  gateways:
+    - host: !secret max_cube_ip 
+      port: 62910
+
+corona_landkreis_waldshut:

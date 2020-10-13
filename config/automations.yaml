@@ -31,12 +31,32 @@
   description: ''
   trigger:
   - entity_id: binary_sensor.updater
-    from: 'off'
     platform: state
     to: 'on'
   condition: []
   action:
-  - data:
-      message: Ich könnte mal wieder ein Update vertragen!
+  - data_template:
+      message: Ich könnte mal wieder ein Update vertragen! Version {{ states.binary_sensor.updater.attributes.newest_version
+        }} ist verfügbar!
       target: '#reaktor23:reaktor23.org'
     service: matrix.send_message
+- id: '1595319200201'
+  alias: Trashwarner
+  description: ''
+  trigger:
+  - at: '21:00'
+    platform: time
+  condition:
+  - condition: time
+    weekday:
+    - tue
+  - condition: template
+    value_template: '{{ states.sensor.restmull.attributes.remaining == 1 }}'
+  action:
+  - data:
+      message: Morgen ist Müllabfuhr
+      title: Müll!
+    service: persistent_notification.create
+  - data:
+      text: Morgen ist Müllabfuhr
+    service: rest_command.voiceapi
