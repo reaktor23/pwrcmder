@@ -13,6 +13,12 @@ homeassistant:
   # Customization file
   customize: !include customize.yaml
 
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 192.168.23.0/24
+
+
 # Prevent log spamming
 logger:
   default: warning
@@ -20,6 +26,7 @@ logger:
     homeassistant.components.mikrotik: warning 
     custom_components.abfallplus: warning
     custom_components.components.rest_command: debug
+    homeassistant.components.matrix: debug
 
 # Enables the frontend
 frontend:
@@ -28,6 +35,8 @@ frontend:
 config:
 
 api:
+
+python_script:
 
 influxdb:
   host: 192.168.23.11
