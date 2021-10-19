@@ -18,9 +18,9 @@
     space_open:
         friendly_name: "Space open"
         value_template: >-
-          {{ states('sensor.person_count')|float > 0 and not states('input_boolean.force_close') == "on"}}
-        icon_template: >
-          {% if states('sensor.person_count')|float > 0 and not states('input_boolean.force_close') == "on" %}
+          {{ states('sensor.hackers')|float(0) > 0 and not states('input_boolean.force_close') == "on"}}
+        icon_template: >-
+          {% if states('sensor.hackers')|float(0) > 0 and not states('input_boolean.force_close') == "on" %}
             mdi:door-open
           {% else %}
             mdi:door-closed

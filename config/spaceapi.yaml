@@ -14,7 +14,7 @@ sensors:
     - sensor.sofa_temperature
     - sensor.zuluft_temperature
   people_now_present:
-    - sensor.person_count
+    - sensor.hackers
   ventilation:
     - switch.relay_3
     - switch.relay_4

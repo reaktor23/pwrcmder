@@ -57,6 +57,43 @@
       message: Morgen ist Müllabfuhr
       title: Müll!
     service: persistent_notification.create
-  - data:
-      text: Morgen ist Müllabfuhr
-    service: rest_command.voiceapi
+  - service: matrix.send_message
+    data:
+      target: '#reaktor23:reaktor23.org'
+      message: Hey, morgen ist Müllabfuhr! Wäre nice wenn jemand den Sack an die Strasse
+        stellen könnte.
+  mode: single
+- id: '1602618018034'
+  alias: Taster Innenlicht
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.input_6
+    to: 'on'
+  condition: []
+  action:
+  - service: script.innenlicht
+    data: {}
+  mode: single
+- id: '1602618109192'
+  alias: Taster Aussenlicht
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.input_5
+    to: 'on'
+  condition: []
+  action:
+  - service: script.aussenlicht
+    data: {}
+  mode: single
+- id: '1610640499068'
+  alias: Update Hackers Counter
+  description: Update the number of hacker currently in the Hackerspace
+  trigger:
+  - platform: time_pattern
+    seconds: '5'
+  condition: []
+  action:
+  - service: python_script.hacker_counter
+  mode: single

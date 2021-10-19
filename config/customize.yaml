@@ -3,11 +3,15 @@ binary_sensor.input_1:
 binary_sensor.input_2:
   friendly_name: Server Stromkreis
 binary_sensor.input_3:
-  friendly_name: Innenlicht
+  friendly_name: Eltako Innenlicht
   location: Innen
 binary_sensor.input_4:
-  friendly_name: Aussenlicht
+  friendly_name: Eltako Aussenlicht
   location: Aussen
+binary_sensor.input_5:
+  friendly_name: Taster Aussenlicht
+binary_sensor.input_6:
+  friendly_name: Taster Innenlicht
 switch.relay_1:
   friendly_name: Impuls Aussenlicht
 switch.relay_2:

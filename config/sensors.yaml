@@ -20,35 +20,33 @@
 
 
 
-# Home Assistant Version 
-- platform: command_line
-  name: Current Version
-  command: "/usr/local/bin/hass --version"
+  ## Home Assistant Version 
+  #- platform: command_line
+  #  name: Current Version
+  #  command: "/usr/local/bin/hass --version"
 
-- platform: onewire
-  names:
-    28-0000062762df: Sofa
-    28-000006288e90: Zuluft
+  #- platform: onewire
+  #  names:
+  #    28-0000062762df: Sofa
+  #    28-000006288e90: Zuluft
 
 - platform: time_date
   display_options:
     - 'time'
 
-- platform: template
-  sensors:
-    person_count:
-      friendly_name: "Members present"
-      unit_of_measurement: 'members'
-      # using sensor.time triggers an update of this sensor every minute, otherwise we would never see this updated on state change
-      entity_id: sensor.time
-      value_template: >-
-        {% set ns = namespace(count=0) %}
-        {% for person in states.person %}
-          {% if person.state == "home" %}
-            {% set ns.count = ns.count + 1 %}
-          {% endif %}
-        {% endfor %}
-        {{ ns.count }}
+      #- platform: template
+      #  sensors:
+      #    person_count:
+      #      friendly_name: "Members present"
+      #      unit_of_measurement: 'members'
+      #      value_template: >-
+      #        {% set ns = namespace(count=0) %}
+      #        {% for person in states.person %}
+      #          {% if person.state == "home" %}
+      #            {% set ns.count = ns.count + 1 %}
+      #          {% endif %}
+      #        {% endfor %}
+      #        {{ ns.count }}
 
 - platform: local_luftdaten
   host: 192.168.23.120

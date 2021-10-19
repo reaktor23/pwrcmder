@@ -68,17 +68,3 @@ ventilation_off:
     data: {}
     entity_id: switch.relay_3, switch.relay_4
   mode: single
-trash_announcement:
-  alias: TrashAnnouncement
-  sequence:
-  - data: {}
-    entity_id: media_player.mpd
-    service: media_player.media_pause
-  - delay: 00:00:02
-  - data:
-      text: Morgen ist Müllabfuhr
-    service: rest_command.voiceapi
-  - delay: 00:00:02
-  - data: {}
-    entity_id: media_player.mpd
-    service: media_player.media_play
