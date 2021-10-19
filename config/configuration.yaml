@@ -42,7 +42,7 @@ influxdb:
   host: 192.168.23.11
   include:
     entities:
-      - sensor.member_count
+      - sensor.hackers
       - sensor.zuluft_temperature
       - sensor.sofa_temperature
       - binary_sensor.input_1
